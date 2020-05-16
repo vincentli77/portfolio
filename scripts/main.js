@@ -63,14 +63,15 @@ window.addEventListener('scroll', () =>
 {   
     let scroll = window.scrollY
     console.log(scroll);
+
+ 
     
     if ( scroll >= 300 && scroll<1400){
         project[0].style.transform = "translateX(30vw)"
         project[0].style.transition = "all 1s"
         description_1[0].style.transform = "translateX(-30vw)"
-        description_1[0].style.transition = "all 1s"
-        
-        // cloud[0].style.transform = "translateX(-500px)"
+        description_1[0].style.transition = "all 1s"     
+
     } else{
         project[0].style.transform = "translateX(-30vw)"
         project[0].style.transition = "all 1s"
