@@ -244,3 +244,10 @@ a{
 }
 
 
+
+@media screen and (max-width: (5000px) {
+  section{
+    display: none;
+  }
+
+}
