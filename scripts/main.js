@@ -66,9 +66,10 @@ window.addEventListener('scroll', () =>
 
  
     
-    if ( scroll >= 300 && scroll<1400){
+    if ( scroll >= 300 && scroll<1600){
         project[0].style.transform = "translateX(30vw)"
         project[0].style.transition = "all 1s"
+        project[0].style.opacity = "1"
         description_1[0].style.transform = "translateX(-30vw)"
         description_1[0].style.transition = "all 1s"     
 
@@ -77,10 +78,12 @@ window.addEventListener('scroll', () =>
         project[0].style.transition = "all 1s"
         description_1[0].style.transform = "translateX(30vw)"
         description_1[0].style.transition = "all 1s"
+        project[0].style.opacity = "0"
     }
-    if ( scroll >= 1200 && scroll< 2300){
+    if ( scroll >= 1600 && scroll< 2600){
         project_2[0].style.transform = "translateX(30vw)"
         project_2[0].style.transition = "all 1s"
+        project_2[0].style.opacity = "1"
         description_2[0].style.transform = "translateX(-30vw)"
         description_2[0].style.transition = "all 1s"
         
@@ -88,13 +91,15 @@ window.addEventListener('scroll', () =>
     } else{
         project_2[0].style.transform = "translateX(-30vw)"
         project_2[0].style.transition = "all 1s"
+        project_2[0].style.opacity = "0"
         description_2[0].style.transform = "translateX(30vw)"
         description_2[0].style.transition = "all 1s"
     }
 
-    if ( scroll >= 2300 && scroll< 3400){
+    if ( scroll >= 2600 && scroll< 3400){
         project_3[0].style.transform = "translateX(30vw)"
         project_3[0].style.transition = "all 1s"
+        project_3[0].style.opacity = "1"
         description_3[0].style.transform = "translateX(-30vw)"
         description_3[0].style.transition = "all 1s"
         
@@ -102,6 +107,7 @@ window.addEventListener('scroll', () =>
     } else{
         project_3[0].style.transform = "translateX(-30vw)"
         project_3[0].style.transition = "all 1s"
+        project_3[0].style.opacity = "0"
         description_3[0].style.transform = "translateX(30vw)"
         description_3[0].style.transition = "all 1s"
     }

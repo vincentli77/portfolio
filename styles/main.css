@@ -37,17 +37,15 @@ h2{
   height: 0.2vh;
   left: 12vw;
   top: 27vh;
-  
-  font-style: normal;
   font-weight: bold;
   font-size: 3vw;
   line-height: 0.1vh;
-  
   color: #FFFFFF;
-  
 }
-
-a{
+h3{
+  margin-top: 200px;
+}
+.about{
   position: absolute;
   text-decoration: none;
   color: white;
@@ -58,7 +56,7 @@ a{
   z-index: 10;
 }
 
-.about{
+.about_image{
   position: absolute;
   width: 25vw;
   height: auto;
@@ -171,7 +169,7 @@ a{
 }
 
 
-.image_project>img{
+.casse_brique{
   position: absolute;
   width: 31vw;
   height: auto;
@@ -194,9 +192,10 @@ a{
 
 .project_2{
   position: relative;
+  margin-top: -100px;
 }
 
- .image_project_2>img{
+ .audio_player{
   position: absolute;
   width: 40vw;
   height: auto;
@@ -221,7 +220,7 @@ a{
   position: relative;
 }
 
- .image_project_3>img{
+ .royal_noisiel{
   position: absolute;
   width: 40vw;
   height: auto;
