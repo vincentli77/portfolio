@@ -47,69 +47,48 @@ window.addEventListener('scroll', () =>
 
 
 
-let project = document.querySelectorAll('.image_project')
-let description_1 = document.querySelectorAll('.description_1')
-
-let project_2 = document.querySelectorAll('.image_project_2')
-let description_2 = document.querySelectorAll('.description_2')
-
-let project_3 = document.querySelectorAll('.image_project_3')
-let description_3 = document.querySelectorAll('.description_3')
 
 
 
-
-window.addEventListener('scroll', () => 
-{   
-    let scroll = window.scrollY
-    console.log(scroll);
-
- 
+var isInViewport = function (elem) {
+    var distance = elem.getBoundingClientRect();
     
-    if ( scroll >= 300 && scroll<1600){
-        project[0].style.transform = "translateX(30vw)"
-        project[0].style.transition = "all 1s"
-        project[0].style.opacity = "1"
-        description_1[0].style.transform = "translateX(-30vw)"
-        description_1[0].style.transition = "all 1s"     
+	return (
+        distance.top >= 0 &&
+		distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+                
+    );
+    
+};
 
-    } else{
-        project[0].style.transform = "translateX(-30vw)"
-        project[0].style.transition = "all 1s"
-        description_1[0].style.transform = "translateX(30vw)"
-        description_1[0].style.transition = "all 1s"
-        project[0].style.opacity = "0"
-    }
-    if ( scroll >= 1600 && scroll< 2600){
-        project_2[0].style.transform = "translateX(30vw)"
-        project_2[0].style.transition = "all 1s"
-        project_2[0].style.opacity = "1"
-        description_2[0].style.transform = "translateX(-30vw)"
-        description_2[0].style.transition = "all 1s"
-        
-        // cloud[0].style.transform = "translateX(-500px)"
-    } else{
-        project_2[0].style.transform = "translateX(-30vw)"
-        project_2[0].style.transition = "all 1s"
-        project_2[0].style.opacity = "0"
-        description_2[0].style.transform = "translateX(30vw)"
-        description_2[0].style.transition = "all 1s"
-    }
+console.log(window.innerHeight);
 
-    if ( scroll >= 2600 && scroll< 3400){
-        project_3[0].style.transform = "translateX(30vw)"
-        project_3[0].style.transition = "all 1s"
-        project_3[0].style.opacity = "1"
-        description_3[0].style.transform = "translateX(-30vw)"
-        description_3[0].style.transition = "all 1s"
-        
-        // cloud[0].style.transform = "translateX(-500px)"
-    } else{
-        project_3[0].style.transform = "translateX(-30vw)"
-        project_3[0].style.transition = "all 1s"
-        project_3[0].style.opacity = "0"
-        description_3[0].style.transform = "translateX(30vw)"
-        description_3[0].style.transition = "all 1s"
-    }
+var project = document.querySelector('.casse_brique');
+var project2 = document.querySelector('.audio_player');
+var project3 = document.querySelector('.royal_noisiel');
 
-})
+var description = document.querySelector('.description_1');
+var description2 = document.querySelector('.description_2');
+var description3 = document.querySelector('.description_3');
+
+let tab = [project, project2,project3]
+let tab2 = [description, description2,description3]
+
+
+    window.addEventListener('scroll', function (event) {
+    for ( let i = 0; i < tab.length; i++){
+            if (isInViewport(tab[i])) {
+              tab[i].style.transform ="translate(30vw)"
+              tab[i].style.transition= "all 0.5s"
+              tab2[i].style.transform ="translate(-30vw)"
+              tab2[i].style.transition= "all 0.5s"
+            } else {
+                tab[i].style.transform ="translate(-30vw)"
+                tab[i].style.transition= "all 0.5s"
+                tab2[i].style.transform ="translate(30vw)"
+                tab2[i].style.transition= "all 0.5s"
+            }
+          }
+          }, false)
+          
