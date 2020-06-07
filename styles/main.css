@@ -56,6 +56,10 @@ h3{
   z-index: 10;
 }
 
+.about:hover{
+  text-decoration: underline;
+}
+
 .about_image{
   position: absolute;
   width: 25vw;
