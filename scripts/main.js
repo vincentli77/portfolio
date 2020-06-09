@@ -55,14 +55,15 @@ var isInViewport = function (elem) {
     
 	return (
         distance.top >= 0 &&
-		distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+		distance.bottom <= (window.innerHeight + 300 || document.documentElement.clientHeight) &&
+        distance.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        distance.left <= (window.innerWidth || document.documentElement.clientWidth)
+
                 
     );
     
 };
 
-console.log(window.innerHeight);
 
 var project = document.querySelector('.casse_brique');
 var project2 = document.querySelector('.audio_player');
