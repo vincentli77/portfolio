@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 const lazyloadElements = document.querySelectorAll('.js-lazyload')
 
 const sizes = {}
