@@ -282,12 +282,26 @@ h2{
   color: #FFFFFF;
 }
 
+.mobile{
+  display: none;
+  margin: 0 auto;
 
+}
+
+.mobile>h1{
+  line-height: 100px;
+  text-align: center;
+  font-size: 42px;
+}
 
 
 @media screen and (max-width: 1000px) {
   section{
     display: none;
+  }
+
+  .mobile{
+    display: block;
   }
 
 }
