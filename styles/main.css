@@ -55,8 +55,8 @@ h2{
   text-decoration: none;
   color: white;
   font-size: 2vw;
-  top: 102%;
-  left: 30%;
+  top: 102vh;
+  left: 29.5vw;
   font-weight: bold;
   z-index: 10;
 }
@@ -69,8 +69,8 @@ h2{
   position: absolute;
   width: 25vw;
   height: auto;
-  top : 80%;
-  left: 20%;
+  top : 80vh;
+  left: 20vw;
   animation-name: rotation_about;
   animation-iteration-count: infinite;
   animation-duration: 30s;
