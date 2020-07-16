@@ -72,13 +72,18 @@ var isInViewport = function (elem) {
 var project = document.querySelector('.casse_brique');
 var project2 = document.querySelector('.audio_player');
 var project3 = document.querySelector('.royal_noisiel');
+var project4 = document.querySelector('.dropshipping');
+
 
 var description = document.querySelector('.description_1');
 var description2 = document.querySelector('.description_2');
 var description3 = document.querySelector('.description_3');
+var description4 = document.querySelector('.description_4');
 
-let tab = [project, project2,project3]
-let tab2 = [description, description2,description3]
+
+
+let tab = [project, project2, project3, project4];
+let tab2 = [description, description2, description3, description4];
 
 
     window.addEventListener('scroll', function (event) {
