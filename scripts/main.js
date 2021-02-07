@@ -59,7 +59,7 @@ var isInViewport = function (elem) {
     
 	return (
         distance.top >= 0 &&
-		distance.bottom <= (window.innerHeight + 300 || document.documentElement.clientHeight) &&
+		distance.bottom <= (window.innerHeight +100 || document.documentElement.clientHeight+100) &&
         distance.right <= (window.innerWidth || document.documentElement.clientWidth) &&
         distance.left <= (window.innerWidth || document.documentElement.clientWidth)
 
