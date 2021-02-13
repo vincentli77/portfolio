@@ -92,9 +92,9 @@ h2{
   z-index: 0 ;
   width: 65%;
   height: auto;
-  animation-name: sun-animation;
+  /* animation-name: sun-animation;
   animation-duration: 1s;
-  animation: sun-animation  1s;
+  animation: sun-animation  1s; */
   left: 55%;
 }
 
