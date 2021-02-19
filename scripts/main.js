@@ -74,25 +74,16 @@ let isInViewport2 = function (elem) {
 	);
 };
 
-let project = document.querySelector('.casse_brique');
-let project2 = document.querySelector('.audio_player');
-let project3 = document.querySelector('.royal_noisiel');
-let project4 = document.querySelector('.dropshipping');
-
-
-let description = document.querySelector('.description_1');
-let description2 = document.querySelector('.description_2');
-let description3 = document.querySelector('.description_3');
-let description4 = document.querySelector('.description_4');
+let project = document.querySelectorAll('.img_project');
+let description = document.querySelectorAll('.description');
 let main = document.querySelector('.main');
 let sun = document.querySelector('.sun');
 let cloud = document.querySelectorAll('.cloud')
 let cloud2 = document.querySelector('.cloud2')
+let tab = project;
+let tab2 = description;
 
-console.log(cloud);
 
-let tab = [project, project3, project4];
-let tab2 = [description, description3, description4];
 
 
     window.addEventListener('scroll', function (event) {
@@ -114,7 +105,8 @@ let tab2 = [description, description3, description4];
             }
           }
           }, false)
-          
+
+     
           window.addEventListener('scroll', function (event) {
          
             if (!isInViewport2(main)) {

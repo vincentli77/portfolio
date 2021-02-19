@@ -6,7 +6,9 @@ body{
   font-family:"Lato",sans-serif;
   font-size: 14px;
   color:#444;
-  background-color: #061C38;
+  /* background-color: #061C38; */
+  background-color: #161616;
+
   overflow-x: hidden;
   
 }
@@ -92,9 +94,6 @@ h2{
   z-index: 0 ;
   width: 65%;
   height: auto;
-  /* animation-name: sun-animation;
-  animation-duration: 1s;
-  animation: sun-animation  1s; */
   left: 55%;
 }
 
@@ -114,6 +113,11 @@ h2{
   0%   { transform:translateX(-100%) }
 }
 
+.nuage_animation{
+  animation-name: nuage-animation;
+  animation-duration: 1s;
+  animation: nuage-animation  1s;  
+}
 
 .nuage{
   position: absolute;
@@ -122,9 +126,7 @@ h2{
   z-index: 1;
   width: 30%;
   height: auto;
-  animation-name: nuage-animation;
-  animation-duration: 1s;
-  animation: nuage-animation  1s;  
+
 }
 
 .nuage2{
@@ -133,10 +135,7 @@ h2{
   top: 10%;
   width: 30%;
   height: auto;
-  z-index: 1;
-  animation-name: nuage-animation;
-  animation-duration: 1s;
-  animation: nuage-animation  1s;  
+  z-index: 1; 
   }
 .nuage3{
   position: absolute;
@@ -144,10 +143,7 @@ h2{
   top: 50%;
   width: 30%;
   height: auto;
-  z-index: 1;
-  animation-name: nuage-animation;
-  animation-duration: 1s;
-  animation: nuage-animation  1s;  
+  z-index: 1;  
 }
 .nuage4{
   position: absolute;
@@ -156,9 +152,6 @@ h2{
   width: 30%;
   height: auto;
   z-index: 1;
-  animation-name: nuage-animation;
-  animation-duration: 1s;
-  animation: nuage-animation  1s;  
 }
 .nuage5{
   position: absolute;
@@ -167,13 +160,9 @@ h2{
   width: 30%;
   height: auto;
   z-index: 1;
-  animation-name: nuage-right-animation;
-  animation-duration: 1s;
-  animation: nuage-right-animation  1s;  
-
 }
 
-.project_1{
+.project{
   position: relative;
   width: 100%;
   height: 100%;
@@ -188,30 +177,12 @@ h2{
   top: 20vh;
   box-shadow: 31px 36px 25px rgba(0, 0, 0, 0.55);
 }
- 
-.description_1{
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  left: 90vw;
-  top: 20vh;
-  font-weight: bold;
-  font-size: 3vw;   
-  color: #FFFFFF;
 
-}
-
-.project_2{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
- .audio_player{
+.audio_player{
   position: absolute;
   width: 40vw;
   height: auto;
-  left: -15vw;
+  left: -20vw;
   top: 20vh;
 }
 
@@ -219,68 +190,32 @@ h2{
   position: absolute;
   width: 40vw;
   height: auto;
-  left: -15vw;
+  left: -20vw;
   top: 20vh;
 }
  
- 
-
-.description_2{
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  left: 90vw;
-  top: 30vh;
-  font-weight: bold;
-  font-size: 3vw;   
-  color: #FFFFFF;
-}
-
-
-.project_3{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
- .royal_noisiel{
+  .royal_noisiel{
   position: absolute;
   width: 40vw;
   height: auto;
-  left: -15vw;
+  left: -20vw;
   top: 20vh;
   box-shadow: 31px 36px 25px rgba(0, 0, 0, 0.55);
 
 }
  
-
-.description_3{
+.description{
   position: absolute;
   width: 50%;
   height: 50%;
   left: 90vw;
-  top: 15vh;
+  top: 14vh;
   font-weight: bold;
   font-size: 3vw;   
   color: #FFFFFF;
+
 }
 
-.project_4{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.description_4{
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  left: 90vw;
-  top: 15vh;
-  font-weight: bold;
-  font-size: 3vw;   
-  color: #FFFFFF;
-}
 
 .mobile{
   display: none;
