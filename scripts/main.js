@@ -74,7 +74,7 @@ let isInViewport2 = function (elem) {
 	);
 };
 
-let project = document.querySelectorAll('.img_project');
+let project = document.querySelectorAll('.image');
 let description = document.querySelectorAll('.description');
 let main = document.querySelector('.main');
 let sun = document.querySelector('.sun');
@@ -89,12 +89,10 @@ let tab2 = description;
     window.addEventListener('scroll', function (event) {
     for ( let i = 0; i < tab.length; i++){
             if (isInViewport(tab[i])) {
-              tab[i].style.transform ="translate(30vw)"
+              tab[i].style.transform ="translate(10vw)"
               tab[i].style.transition= "all 0.5s"
               tab2[i].style.transform ="translate(-30vw)"
-              tab2[i].style.transition= "all 0.5s"
-
-
+              tab2[i].style.transition= "all 0.5s"        
             } else {
                 tab[i].style.transform ="translate(-30vw)"
                 tab[i].style.transition= "all 0.5s"
@@ -105,6 +103,7 @@ let tab2 = description;
             }
           }
           }, false)
+
 
      
           window.addEventListener('scroll', function (event) {
@@ -132,3 +131,10 @@ let tab2 = description;
   
             }
           }, false)
+
+
+
+     
+
+    
+    
