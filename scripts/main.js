@@ -110,14 +110,14 @@ let tab2 = description;
           window.addEventListener('scroll', function (event) {
          
             if (!isInViewport2(main)) {
-                sun.style.transform ="translate(30vw)"
-                sun.style.transition= "all 0.5s"
+                sun.style.transform ="translate(60vw)"
+                sun.style.transition= "all 1s"
 
                 for (let i = 0;  i < cloud.length; i++) {
-                    cloud[i].style.transform ="translate(30vw)"
-                    cloud[i].style.transition= "all 0.5s"  
-                    cloud2.style.transform ="translate(-30vw)"
-                    cloud2.style.transition= "all 0.5s"   
+                    cloud[i].style.transform ="translate(60vw)"
+                    cloud[i].style.transition= "all 1s"  
+                    cloud2.style.transform ="translate(-60vw)"
+                    cloud2.style.transition= "all 1s"   
                 }      
   
             }else{
