@@ -1,9 +1,11 @@
+*{
+  font-family:"Lato",sans-serif;
 
+}
 
 body{
   margin:0;
   padding:0;
-  font-family:"Lato",sans-serif;
   font-size: 14px;
   color:#444;
   /* background-color: #061C38; */
@@ -13,7 +15,44 @@ body{
   
 }
 
+header{
+  width: 100vw;
+  height:5vh;
+  background-color: #0f0d0d;
+  border-bottom: 1px black;
+  position: fixed;
+  z-index: 100;
+  color: white;
+  text-decoration: none;
+}
 
+.head{
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: white;
+
+}
+li{
+  list-style: none;
+}
+.name{
+  margin-left: 3%;
+}
+.about{
+  width: 30vw;
+  text-decoration: none;
+  color: white;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
 
 section{
   width: 100vw;
@@ -52,20 +91,14 @@ h2{
   color: #FFFFFF;
 }
 
-.about{
-  position: absolute;
-  text-decoration: none;
-  color: white;
-  font-size: 2vw;
-  top: 102vh;
-  left: 29.5vw;
-  font-weight: bold;
-  z-index: 10;
+
+
+.line{
+  width: 30vw;
+  height: 5px;
+  background-color: white;
 }
 
-.about:hover{
-  text-decoration: underline;
-}
 
 .about_image{
   position: absolute;

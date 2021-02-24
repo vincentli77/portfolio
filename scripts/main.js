@@ -1,3 +1,6 @@
+
+
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
@@ -84,6 +87,11 @@ let tab = project;
 let tab2 = description;
 
 
+let headProject = document.querySelector('.head_project')
+let casse_brique= document.querySelector('.project_one')
+headProject.addEventListener('click',()=>{
+    casse_brique.scrollIntoView({behavior: "smooth"})
+})
 
 
     window.addEventListener('scroll', function (event) {
