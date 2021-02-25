@@ -51,7 +51,8 @@ li{
   margin-right: 5%;
   display: flex;
   justify-content: space-between;
-align-items: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 section{
@@ -317,9 +318,19 @@ button > a{
 }
 
  .back {
-  background-color: white;
+  background-color: rgb(32, 32, 32);
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1vw;
+
+}
+
+.back>p{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .front, .back {
