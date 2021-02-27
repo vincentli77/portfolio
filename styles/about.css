@@ -1,8 +1,11 @@
+*{
+  font-family:"Lato",sans-serif;
+
+}
 body{
 
     margin:0;
     padding:0;
-    font-family:"Product Sans",sans-serif;
     font-size: 14px;
     color:#444;
     background-color:#161616;
@@ -32,7 +35,7 @@ body{
   a{
     text-decoration: none;
     color: white;
-  
+    
   }
   li{
     list-style: none;
@@ -91,9 +94,7 @@ body{
     position: absolute;
   }
 
-  a:hover{
-    text-decoration: underline;
-  }
+
 
   h1{
     width: 50%;
@@ -107,6 +108,8 @@ body{
 
     font-size: 25px;
     line-height: 45px;
+    list-style-type: circle;
+
   }
 
   h2{
@@ -137,11 +140,23 @@ body{
     
   }
 
+  .skill_development{
+    margin-bottom: 10%;
+  }
+
+  .skill_section_design{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding-right: 10%;
+     
+  }
 .skill_design{
 
   display: flex;
   align-items: center;
-  margin-top: 3%;
+  flex:25%
+
   }
 
   .skill_design>img{
@@ -151,3 +166,4 @@ body{
   .skill_design>p{
     margin-left: 5%;
   }
+

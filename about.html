@@ -11,12 +11,12 @@
     <header>
       <div class="head">
         <li class="name">
-          <p>Vincent LI </p>
+          <a  href ="index.html">Vincent LI</a>
         </li>
         <li class="about">
-          <p  class="head_project">Project</p>
+          <a  href ="index.html">Project</a>
           <a  href ="about.html">About me</a>
-          <a  href ="about.html">Contact</a>
+          <a  href ="#contact">Contact</a>
         </li>
       </div>
     </header>
@@ -33,11 +33,19 @@
       </section> 
 
        <section class="skill ">
-        <h3>Development</h3>
-        <p class="text">- HTML <br>- CSS<br> - JavaScript<br> - Node.js<br> - Express</p> 
+         <div class="skill_development">
+          <h3>Development</h3>
+          <ul class="skill_section_design">
+            <li class="text">HTML</li>
+            <li class="text">CSS</li>
+            <li class="text">JavaScript</li>
+            <li class="text">Node.js</li>
+            <li class="text">Express.js</li>
+          </ul>
+         </div>
         <h3>Design</h3>
-        <div>
-         <div class="skill_design"> 
+        <div class="skill_section_design">
+        <div class="skill_design"> 
           <img class="audio_player" src="images/PS.svg"  alt="#">
           <p class="text">Photoshop</p>
         </div>
@@ -53,10 +61,11 @@
           <img class="audio_player" src="images/xd.svg"  alt="#">
           <p class="text">AdobeXD</p>
         </div>
-       </div> 
+      </div> 
+
 
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="description">
        <h3>Contact</h3>   
        <div class="skill_design"> 
@@ -73,6 +82,6 @@
       </div>
      </div> 
     </section> 
-     
+     <script src="main.js"></script>
   </body>
 </html>
