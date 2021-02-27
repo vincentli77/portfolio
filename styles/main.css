@@ -312,6 +312,11 @@ button > a{
   box-shadow: 31px 36px 25px rgba(0, 0, 0, 0.55);
 }
  
+.api_back{
+  width: 30vw;
+  height: 30vh ;
+  box-shadow: 31px 36px 25px rgba(0, 0, 0, 0.55);
+}
 
 .image:hover .flipper {
   transform: rotateY(180deg);
