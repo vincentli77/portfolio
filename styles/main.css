@@ -38,9 +38,33 @@ a{
   color: white;
 
 }
+.underbar{
+  height: 3px;
+  background: white;
+  top: 30px;
+  position: absolute;
+  transition: 0.5s ease;
+}
 li{
   list-style: none;
+  transition: 0.5s ease;
+
 }
+  li:nth-of-type(1):hover ~ .underbar{
+    right: 25.5%;
+    width: 45px;
+    background: white;
+  }
+  li:nth-of-type(2):hover ~ .underbar{
+    right: 18.5%;
+    width: 60px;
+    background: white;
+  }
+  li:nth-of-type(3):hover ~ .underbar{
+    right: 12.5%;
+    width: 47px;
+    background: white;
+  }
 .name{
   margin-left: 3%;
 }
@@ -48,11 +72,14 @@ li{
   width: 30vw;
   text-decoration: none;
   color: white;
-  margin-right: 5%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+
+.head_project{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 section{
