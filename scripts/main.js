@@ -95,7 +95,7 @@ headProject.addEventListener('click',()=>{
 
 
     window.addEventListener('scroll', function (event) {
-        if(screen.width >920){
+        if(screen.width >800){
             for ( let i = 0; i < tab.length; i++){
                 if (isInViewport(tab[i])) {
                   tab[i].style.transform ="translate(10vw)"
@@ -118,7 +118,7 @@ headProject.addEventListener('click',()=>{
 
      
           window.addEventListener('scroll', function (event) {
-            if(screen.width >920){
+            if(screen.width >800){
   
             if (!isInViewport2(main)) {
                 sun.style.transform ="translate(60vw)"
@@ -166,7 +166,7 @@ headProject.addEventListener('click',()=>{
 
           
     window.addEventListener('scroll', function (event) {
-        if(screen.width <920){
+        if(screen.width <800){
             for ( let i = 0; i < tab.length; i++){
                 if (isInViewport(tab[i])) {
                   tab[i].style.transform ="translate(80vw)"
@@ -189,7 +189,7 @@ headProject.addEventListener('click',()=>{
 
      
           window.addEventListener('scroll', function (event) {
-            if(screen.width >920){
+            if(screen.width >800){
   
             if (!isInViewport2(main)) {
                 sun.style.transform ="translate(60vw)"
