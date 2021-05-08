@@ -349,6 +349,11 @@ h2{
   }
 
   
+   .flipper, .back , .link_project{
+    transition: none!important;
+  }
+
+ 
 
 
 }
@@ -418,8 +423,11 @@ button > a{
   box-shadow: 31px 36px 25px rgba(0, 0, 0, 0.55);
 }
 
-.image:hover .flipper {
-  transform: rotateY(180deg);
+@media screen  and (min-width : 1000px){
+  .image:hover .flipper {
+    transform: rotateY(180deg);
+  }
+    
 }
 
  .back {
