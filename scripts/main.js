@@ -149,5 +149,76 @@ headProject.addEventListener('click',()=>{
 
      
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    window.addEventListener('scroll', function (event) {
+        if(screen.width <920){
+            for ( let i = 0; i < tab.length; i++){
+                if (isInViewport(tab[i])) {
+                  tab[i].style.transform ="translate(80vw)"
+                  tab[i].style.transition= "all 0.5s"
+                  tab2[i].style.transform ="translate(-35vw)"
+                  tab2[i].style.transition= "all 0.5s"        
+                } else {
+                    tab[i].style.transform ="translate(-100vw)"
+                    tab[i].style.transition= "all 0.5s"
+                    tab2[i].style.transform ="translate(55vw)"
+                    tab2[i].style.transition= "all 0.5s"
+    
+    
+                }
+              }
+            }
+              }, false)
+    
+        
+
+     
+          window.addEventListener('scroll', function (event) {
+            if(screen.width >920){
+  
+            if (!isInViewport2(main)) {
+                sun.style.transform ="translate(60vw)"
+                sun.style.transition= "all 1s"
+
+                for (let i = 0;  i < cloud.length; i++) {
+                    cloud[i].style.transform ="translate(60vw)"
+                    cloud[i].style.transition= "all 1s"  
+                    cloud2.style.transform ="translate(-60vw)"
+                    cloud2.style.transition= "all 1s"   
+                }      
+  
+            }else{
+                sun.style.transform ="translate(0vw)"
+                sun.style.transition= "all 0.5s"
+                for (let i = 0;  i < cloud.length; i++) {
+                    cloud[i].style.transform ="translate(0vw)"
+                    cloud[i].style.transition= "all 0.5s" 
+                    cloud2.style.transform ="translate(0vw)"
+                    cloud2.style.transition= "all 0.5s"   
+                }      
+  
+            }
+        }
+          }, false)
+
+        
+
+     
+
     
     
