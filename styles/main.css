@@ -249,13 +249,20 @@ h2{
   width: 50%;
   height: 50%;
   left: 90vw;
-  top: 14vh;
+  top: 20%;
   font-weight: bold;
   font-size: 3vw;   
   color: #FFFFFF;
 
 }
 
+.description>h3{
+  margin: 0;
+}
+
+.description>p{
+  margin-top: 2%;
+}
 
 .mobile{
   display: none;
@@ -271,16 +278,53 @@ h2{
 
 
 @media screen and (max-width: 1000px) {
-  section{
+  /* section{
     display: none;
-  }
+  } */
 
-  .mobile{
+  /* .mobile{
     display: block;
     position: absolute;
     top: 20%;
     left: 25%;
+  } */
+.name>h1{
+  position: absolute;
+  left: 39%;
+}
+.name>h2{
+  position: absolute;
+  top: 20%;
+  left: 39%;
+}
+  .animation_sun{
+    display: none;
   }
+
+  .main{
+    margin: 0;
+    height: 50vh;
+  }
+
+
+  .img_project{
+    width: auto!important;
+    left: 0%!important;
+  }
+
+  .casse_brique{
+    width: 80vw!important;
+  }
+  .description{
+    top: 60%;
+    left: 55%;
+    text-align: center;
+  }
+
+  .description>button{
+    width: 80%;
+  }
+
 
 
 }
