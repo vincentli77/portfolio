@@ -289,6 +289,10 @@ h2{
     left: 25%;
   } */
 
+  .name,.about{
+    font-size: 2em;
+  }
+
   .name_home{
     position: absolute;
   }
