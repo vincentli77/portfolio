@@ -198,3 +198,77 @@ body{
     margin-left: 5%;
   }
 
+
+  @media screen and (max-width: 1000px) {
+    /* section{
+      display: none;
+    } 
+  
+     .mobile{
+      display: block;
+      position: absolute;
+      top: 20%;
+      left: 25%;
+    } */
+  
+    .name,.about{
+      font-size: 2em;
+    }
+  
+    .name_home{
+      position: absolute;
+    }
+  .name_home>h1{
+    font-size: 8em; 
+    position: absolute;
+    top: 16vh;
+    left: 23%;
+    width: 83vw!important;
+    position:relative
+  }
+  .name_home>h2{
+    position: absolute;
+    top: 117%;
+    left: 60%;
+  }
+    .animation_sun{
+      display: none;
+    }
+  
+    .main{
+      margin: 0;
+      height: 50vh;
+    }
+  
+    .header{
+      width: 100vw;
+    }
+  
+    .img_project{
+      width: 60vw!important;
+      height: auto!important;
+      left: -60vw!important;
+      position: absolute;
+    }
+  
+    .casse_brique{
+      width: 60vw!important;
+      height: auto!important;
+    }
+    .description{
+      top: 50%;
+      left: 60%;
+      text-align: center;
+    }
+  
+    .description>button{
+      width: 80%;
+      height: 10%;
+    }
+  
+    .project{
+      width: 100%;
+    }
+  
+  
+  }
