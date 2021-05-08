@@ -95,27 +95,31 @@ headProject.addEventListener('click',()=>{
 
 
     window.addEventListener('scroll', function (event) {
-    for ( let i = 0; i < tab.length; i++){
-            if (isInViewport(tab[i])) {
-              tab[i].style.transform ="translate(10vw)"
-              tab[i].style.transition= "all 0.5s"
-              tab2[i].style.transform ="translate(-30vw)"
-              tab2[i].style.transition= "all 0.5s"        
-            } else {
-                tab[i].style.transform ="translate(-30vw)"
-                tab[i].style.transition= "all 0.5s"
-                tab2[i].style.transform ="translate(30vw)"
-                tab2[i].style.transition= "all 0.5s"
-
-
+        if(screen.width >920){
+            for ( let i = 0; i < tab.length; i++){
+                if (isInViewport(tab[i])) {
+                  tab[i].style.transform ="translate(10vw)"
+                  tab[i].style.transition= "all 0.5s"
+                  tab2[i].style.transform ="translate(-30vw)"
+                  tab2[i].style.transition= "all 0.5s"        
+                } else {
+                    tab[i].style.transform ="translate(-30vw)"
+                    tab[i].style.transition= "all 0.5s"
+                    tab2[i].style.transform ="translate(30vw)"
+                    tab2[i].style.transition= "all 0.5s"
+    
+    
+                }
+              }
             }
-          }
-          }, false)
-
+              }, false)
+    
+        
 
      
           window.addEventListener('scroll', function (event) {
-         
+            if(screen.width >920){
+  
             if (!isInViewport2(main)) {
                 sun.style.transform ="translate(60vw)"
                 sun.style.transition= "all 1s"
@@ -138,9 +142,10 @@ headProject.addEventListener('click',()=>{
                 }      
   
             }
+        }
           }, false)
 
-
+        
 
      
 

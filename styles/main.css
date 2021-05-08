@@ -278,17 +278,17 @@ h2{
 
 
 @media screen and (max-width: 1000px) {
-  /* section{
+  section{
     display: none;
-  } */
+  } 
 
-  /* .mobile{
+   .mobile{
     display: block;
     position: absolute;
     top: 20%;
     left: 25%;
-  } */
-.name>h1{
+  }
+/* .name>h1{
   position: absolute;
   left: 39%;
 }
@@ -306,6 +306,9 @@ h2{
     height: 50vh;
   }
 
+  .header{
+    width: 100%;
+  }
 
   .img_project{
     width: auto!important;
@@ -325,7 +328,7 @@ h2{
     width: 80%;
   }
 
-
+ */
 
 }
 
