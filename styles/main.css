@@ -282,6 +282,10 @@ h2{
   body{
     transition: none;
   }
+
+  .underbar{
+    display: none;
+  }
   /* section{
     display: none;
   } 
@@ -372,6 +376,7 @@ h2{
    .flipper, .back , .link_project{
     transition: none!important;
   }
+  
 }
 
 button{
