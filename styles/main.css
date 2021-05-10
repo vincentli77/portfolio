@@ -89,6 +89,7 @@ section{
 }
 
 .main{
+  height: 100vh;
   margin-bottom: 40vh;
 }
 
@@ -162,7 +163,7 @@ h2{
   left: 55%;
 }
 
-@keyframes sun-animation
+/* @keyframes sun-animation
 {
     0%   { transform:translateX(100%) }
 
@@ -176,7 +177,7 @@ h2{
 @keyframes nuage-animation2
 {
   0%   { transform:translateX(-100%) }
-}
+} */
 
 .nuage_animation{
   animation-name: nuage-animation;
@@ -232,28 +233,32 @@ h2{
   z-index: 1;
 }
 
+
+
+
+
 .project{
-  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
 }
 
 
-
+.image_project{
+  width: 60vw!important;
+  height: auto!important;
+  margin-left: 10%;
+}
 
 
  
 
 .description{
-  position: absolute;
   width: 50%;
   height: 50%;
-  left: 90vw;
-  top: 20%;
   font-weight: bold;
   font-size: 3vw;   
   color: #FFFFFF;
-
 }
 
 .description>h3{
@@ -277,107 +282,6 @@ h2{
 }
 
 
-@media screen and (max-width: 1200px) {
-
-  body{
-    transition: none;
-  }
-
-  .underbar{
-    display: none;
-  }
-  /* section{
-    display: none;
-  } 
-
-   .mobile{
-    display: block;
-    position: absolute;
-    top: 20%;
-    left: 25%;
-  } */
-
-  .name,.about{
-    font-size: 2em;
-  }
-
-  .name_home{
-    position: absolute;
-  }
-.name_home>h1{
-  font-size: 8em; 
-  position: absolute;
-  top: 16vh;
-  left: 23%;
-  width: 83vw!important;
-  position:relative
-}
-.name_home>h2{
-  position: absolute;
-  top: 117%;
-  left: 60%;
-}
-  .animation_sun{
-    display: none;
-  }
-
-  .main{
-    margin: 0;
-    height: 50vh;
-  }
-
-  .header{
-    width: 100%;
-  }
-
-  .image_project{
-    width: 60vw!important;
-    height: auto!important;
-    position: absolute;
-    position: relative;
-    left: 20%;
-  }
-  .img_project{
-    width: 60vw!important;
-    height: auto!important;
-
-  }
-
-  .casse_brique{
-    left: 75%;
-    width: 60vw!important;
-    height: auto!important;
-  }
-  .description{
-    top: 70%;
-    left: 25%;
-    text-align: center;
-  }
-
-  .description>button{
-    width: 80%;
-    height: 10%;
-  }
-
-  .project{
-    width: 100%;
-    height: 80vh;
-  }
-
-  section{
-    height: auto!important;
-  }
-
-  .main{
-    height: 50vh!important;
-  }
-
-  
-   .flipper, .back , .link_project{
-    transition: none!important;
-  }
-  
-}
 
 button{
   width: 40%;
@@ -402,8 +306,6 @@ button > a{
 
 
  .image{
-  position: absolute;
-  top: 25vh;
   background-color: transparent;
   width: 30vw;
   height: 30vh ;
@@ -479,3 +381,132 @@ button > a{
   
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+  body{
+    transition: none;
+  }
+
+  .underbar{
+    display: none;
+  }
+  /* section{
+    display: none;
+  } 
+
+   .mobile{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  } */
+
+ 
+  .name,.about{
+    font-size: 1.5em;
+  }
+
+  .name_home{
+    position: absolute;
+  }
+.name_home>h1{
+  font-size: 8em; 
+  position: absolute;
+  top: 16vh;
+  left: 23%;
+  width: 83vw!important;
+  position:relative
+}
+.name_home>h2{
+  position: absolute;
+  top: 117%;
+  left: 60%;
+}
+  .animation_sun{
+    display: none;
+  }
+
+  .main{
+    margin: 0;
+    height: 50vh;
+  }
+
+  .header{
+    width: 100%;
+  }
+
+  .black{
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+
+  .image_project{
+    width: 60vw!important;
+    height: auto!important;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+
+  }
+  .img_project{
+    width: 60vw!important;
+    height: auto!important;
+
+  }
+
+
+  .casse_brique{
+    width: 60vw!important;
+    height: auto!important;
+  }
+  .description{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description>button{
+    width: 80%;
+    padding: 5%;
+  }
+
+  .project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section{
+    height: auto!important;
+  }
+
+  .main{
+    height: 50vh!important;
+  }
+
+  
+   .flipper, .back , .link_project{
+    transition: none!important;
+  }
+  
+}

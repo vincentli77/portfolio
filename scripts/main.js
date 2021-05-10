@@ -98,14 +98,14 @@ headProject.addEventListener('click',()=>{
         if(screen.width >1000){
             for ( let i = 0; i < tab.length; i++){
                 if (isInViewport(tab[i])) {
-                  tab[i].style.transform ="translate(10vw)"
+                  tab[i].style.transform ="translate(0vw)"
                   tab[i].style.transition= "all 0.5s"
-                  tab2[i].style.transform ="translate(-30vw)"
+                  tab2[i].style.transform ="translate(0vw)"
                   tab2[i].style.transition= "all 0.5s"        
                 } else {
-                    tab[i].style.transform ="translate(-30vw)"
+                    tab[i].style.transform ="translate(-60vw)"
                     tab[i].style.transition= "all 0.5s"
-                    tab2[i].style.transform ="translate(30vw)"
+                    tab2[i].style.transform ="translate(60vw)"
                     tab2[i].style.transition= "all 0.5s"
     
     

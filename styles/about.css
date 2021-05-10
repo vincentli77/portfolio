@@ -213,4 +213,14 @@ body{
     .name,.about{
       font-size: 2em;
     }
+
+    .presentation{
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+
+    .skill{
+      margin-top: 20%;
+      margin-bottom: 20%;
+    }
   }
