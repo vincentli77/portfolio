@@ -95,7 +95,6 @@ headProject.addEventListener('click',()=>{
 
 
     window.addEventListener('scroll', function (event) {
-        if(screen.width >1000){
             for ( let i = 0; i < tab.length; i++){
                 if (isInViewport(tab[i])) {
                   tab[i].style.transform ="translate(0vw)"
@@ -111,7 +110,7 @@ headProject.addEventListener('click',()=>{
     
                 }
               }
-            }
+            
               }, false)
     
         

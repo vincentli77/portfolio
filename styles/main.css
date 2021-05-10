@@ -480,6 +480,7 @@ button > a{
     text-align: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 15%;
   }
 
   .description>button{
