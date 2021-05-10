@@ -510,3 +510,17 @@ button > a{
   }
   
 }
+
+
+@media screen and  (orientation:landscape) and (max-width : 1000px) {
+  section{
+    display: none;
+  } 
+
+   .mobile{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  }
+}
