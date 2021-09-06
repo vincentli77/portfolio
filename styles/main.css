@@ -523,14 +523,7 @@ button > a{
   }
 }
 
-
-.name_home{
-  z-index: 10;
-}
 .main{
   position: relative;
   overflow-x: hidden;
-}
-.animation_sun{
-  overflow: hidden;
 }
