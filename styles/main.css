@@ -428,15 +428,15 @@ button > a{
 .name_home>h1{
   font-size: 8em; 
   position: absolute;
-  top: 16vh;
-  left: 23%;
+  top: 0%;
+  left: 10%;
   width: 83vw!important;
   position:relative
 }
 .name_home>h2{
   position: absolute;
-  top: 117%;
-  left: 60%;
+  top: 60%;
+  left: 50%;
 }
 
   .main{
@@ -521,4 +521,16 @@ button > a{
     top: 20%;
     left: 25%;
   }
+}
+
+
+.name_home{
+  z-index: 10;
+}
+.main{
+  position: relative;
+  overflow:hidden
+}
+.animation_sun{
+  overflow: hidden;
 }
