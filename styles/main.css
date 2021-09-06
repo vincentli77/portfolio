@@ -529,7 +529,7 @@ button > a{
 }
 .main{
   position: relative;
-  overflow:hidden
+  overflow-x: hidden;
 }
 .animation_sun{
   overflow: hidden;
