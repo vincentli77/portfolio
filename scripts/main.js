@@ -58,10 +58,10 @@ let isInViewport = function (elem) {
     var distance = elem.getBoundingClientRect();
     
 	return (
-        distance.top >= 10 &&
-		distance.bottom <= (window.innerHeight +100 || document.documentElement.clientHeight+100) &&
+        distance.top >=0 &&
+		distance.bottom <= (window.innerHeight+800 || document.documentElement.clientHeight) &&
         distance.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-        distance.left <= (window.innerWidth || document.documentElement.clientWidth)
+        distance.left >= 0
 
                 
     );
@@ -87,6 +87,7 @@ let tab = project;
 let tab2 = description;
 
 
+
 let headProject = document.querySelector('.head_project')
 let casse_brique= document.querySelector('.project_one')
 headProject.addEventListener('click',()=>{
@@ -96,22 +97,19 @@ headProject.addEventListener('click',()=>{
 
     window.addEventListener('scroll', function (event) {
             for ( let i = 0; i < tab.length; i++){
-                if (isInViewport(tab[i])) {
-                  tab[i].style.transform ="translate(0vw)"
-                  tab[i].style.transition= "all 0.5s"
-                  tab2[i].style.transform ="translate(0vw)"
-                  tab2[i].style.transition= "all 0.5s"        
+                if (!isInViewport(tab[i])) {
+                    tab[i].style.transform ="scale(0)"  
+                    tab[i].style.transition ="all 1s"  
+
                 } else {
-                    tab[i].style.transform ="translate(-60vw)"
-                    tab[i].style.transition= "all 0.5s"
-                    tab2[i].style.transform ="translate(60vw)"
-                    tab2[i].style.transition= "all 0.5s"
-    
+                    tab[i].style.transform =" scale(1)"
+                    tab[i].style.transition ="all 1s"  
+
     
                 }
               }
             
-              }, false)
+              },)
     
         
 
