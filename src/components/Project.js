@@ -21,7 +21,7 @@ const Project = (props) => {
       x: 0,
     },
     exit: {
-      opacity: 0.4,
+      opacity: 0,
       transition: { duration: 0.35 },
       x: -800,
     }
@@ -45,7 +45,7 @@ const Project = (props) => {
     },
 
     exit: {
-      opacity: 0.4,
+      opacity: 0,
       transition: { duration: 0.35 },
       x: -800,
     }
