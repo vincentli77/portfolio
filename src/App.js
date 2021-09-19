@@ -23,7 +23,6 @@ const App = () => {
 
   useEffect(() => {
     const handleScrollToElement = (e) => {
-      
       console.log(e);
       const url = window.location.origin + "/";
 
@@ -74,7 +73,7 @@ const App = () => {
       }
     };
     
-    window.addEventListener("onscroll", handleScrollToElement);
+    window.addEventListener("wheel", handleScrollToElement);
   }, [history]);
   return (
     <AnimatePresence>
