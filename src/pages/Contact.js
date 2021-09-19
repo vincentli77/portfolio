@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
           <SocialNetwork />
         </div>
-        <ButtonsBottom left={"/project-5"} />
+        <ButtonsBottom left={"/portfolio/project-5"} />
       </motion.div>
     </main>
   );
