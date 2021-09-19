@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
-import api from '../assets/api_back.png'
 
 
 const Project = (props) => {
@@ -43,6 +42,12 @@ const Project = (props) => {
       opacity: 1,
       x: 0,
       y: 0,
+    },
+
+    exit: {
+      opacity: 0.4,
+      transition: { duration: 0.35 },
+      x: -800,
     }
   }
 
