@@ -40,7 +40,7 @@ export const projectsData = [
     id: 4,
     title: "Droppshipping website",
     date: "Avril 2020",
-    languages: ["Wordpress", "Php", "React"],
+    languages: ["HTML", "CSS", "JS"],
     infos:
       "Site vitrine de droppshipping pour une marque fictif d'un sac à dos",
     img: project4,

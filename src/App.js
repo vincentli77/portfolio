@@ -23,8 +23,8 @@ const App = () => {
 
   useEffect(() => {
     const handleScrollToElement = (e) => {
-      console.log(e);
       const url = window.location.origin + "/";
+      
 
       const wheelRouter = (after, before) => {
         if (e.wheelDeltaY < 0) {
@@ -71,6 +71,7 @@ const App = () => {
           }
           break;
       }
+    
     };
     
     window.addEventListener("wheel", handleScrollToElement);
