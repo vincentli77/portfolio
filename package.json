@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "homepage":"https://vincentli77.github.io/portfolio",
+    "homepage":"https://vincentli77.github.io/portfolio/",
     "gh-pages": "^3.2.3"
   }
 }
