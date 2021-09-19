@@ -7,7 +7,13 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import { Project1, Project2, Project3, Project4,Project5 } from "./pages/Projects";
+import {
+  Project1,
+  Project2,
+  Project3,
+  Project4,
+  Project5,
+} from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
 
@@ -17,6 +23,8 @@ const App = () => {
 
   useEffect(() => {
     const handleScrollToElement = (e) => {
+      
+      console.log(e);
       const url = window.location.origin + "/";
 
       const wheelRouter = (after, before) => {
@@ -40,10 +48,10 @@ const App = () => {
           }
           break;
         default: //do nothing
-          
+
         case url + "project-1":
           wheelRouter("project-2", "/");
-        break;
+          break;
         case url + "project-2":
           wheelRouter("project-3", "project-1");
           break;
@@ -53,9 +61,9 @@ const App = () => {
         case url + "project-4":
           wheelRouter("project-5", "project-3");
           break;
-          case url + "project-5":
-            wheelRouter("contact", "project-4");
-            break;
+        case url + "project-5":
+          wheelRouter("contact", "project-4");
+          break;
         case url + "contact":
           if (e.wheelDeltaY > 0) {
             setTimeout(() => {
@@ -65,10 +73,10 @@ const App = () => {
           break;
       }
     };
-    window.addEventListener("wheel", handleScrollToElement);
+    
+    window.addEventListener("onscroll", handleScrollToElement);
   }, [history]);
   return (
-    
     <AnimatePresence>
       <Switch location={location} key={location.pathname}>
         <Route exact path="/" component={Home} />
