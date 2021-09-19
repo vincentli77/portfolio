@@ -1,3 +1,9 @@
+import casseBrique from '../assets/casse_brique.png'
+import api_back from '../assets/api_back.png'
+import chifumi from '../assets/chifumi.png'
+import project4 from '../assets/project4.png'
+import royalNoisiel from '../assets/royal_noisiel.png'
+
 export const projectsData = [
   {
     id: 1,
@@ -6,7 +12,7 @@ export const projectsData = [
     languages: ["HTML", "CSS", "Javascripts","CANVAS"],
     infos:
       "Création du jeu casse brique avec javascript en utilisant le canvas, ce travail  avait pour but de renforcer mes compétences en javascript",
-    img: "./img/casse_brique.png",
+    img: casseBrique,
     link: "https://vincentli77.github.io/breaking-brick-canvas/",
   },
   {
@@ -16,7 +22,7 @@ export const projectsData = [
     languages: ["HTML", "CSS","JS","NODE.JS"],
     infos:
       "Gestion stockage de livre basé à partir de l'api google books permettant d'ajouter, supprimer des livres. Les livres sont stockés depuis une base de données et l'ajouts des livres se fait grâce a l'appel d'api de google books",
-    img: "./img/api_back.png",
+    img: api_back,
     link: "https://vincentli77.github.io/first_api_back_express/",
   },
   {
@@ -26,7 +32,7 @@ export const projectsData = [
     languages: ["HTML", "CSS", "VUE.JS"],
     infos:
       "Jeu chifumi développer en avec vue.js",
-    img: "./img/chifumi.png",
+    img: chifumi,
     link: "https://vincentli77.github.io/chifumi/",
   },
 
@@ -37,7 +43,7 @@ export const projectsData = [
     languages: ["Wordpress", "Php", "React"],
     infos:
       "Site vitrine de droppshipping pour une marque fictif d'un sac à dos",
-    img: "./img/project4.png",
+    img: project4,
     link: "https://vincentli77.github.io/dropshipping-vitrine-website/",
   },
   {
@@ -47,7 +53,7 @@ export const projectsData = [
     languages: ["HTML", "CSS","JS"],
     infos:
       "Création d'un site vitrine de restaurant",
-    img: "./img/royal_noisiel.png",
+    img: royalNoisiel,
     link: "http://www.royalnoisiel.fr",
   },
 ];

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
+import api from '../assets/api_back.png'
+
 
 const Project = (props) => {
   const [currentProject] = useState(projectsData);
