@@ -22,25 +22,39 @@ const App = () => {
   const history = useHistory();
 
   useEffect(() => {
+    let scrollingDirection = 0; //idle
+    let lastScroll = 9999;
+    let scrollIdleTime = 300; // time interval that we consider a new scroll event
     const handleScrollToElement = (e) => {
       const url = window.location.origin + "/portfolio/";
-      
+      var timeNow = performance.now();
 
       const wheelRouter = (after, before) => {
-        if (e.wheelDeltaY < 0) {
+        if (
+          e.wheelDeltaY < 0 &&
+          (scrollingDirection != 2 || timeNow > lastScroll + scrollIdleTime)
+        ) {
           setTimeout(() => {
             history.push(after);
+            scrollingDirection = 2;
           }, 500);
-        } else if (e.wheelDeltaY > 0) {
+        } else if (
+          e.wheelDeltaY > 0 &&
+          (scrollingDirection != 1 || timeNow > lastScroll + scrollIdleTime)
+        ) {
           setTimeout(() => {
             history.push(before);
+            scrollingDirection = 1;
           }, 500);
         }
       };
 
       switch (window.location.href.toString()) {
         case url:
-          if (e.wheelDeltaY < 0) {
+          if (
+            e.wheelDeltaY < 0 &&
+            (scrollingDirection != 1 || timeNow > lastScroll + scrollIdleTime)
+          ) {
             setTimeout(() => {
               history.push("/portfolio/project-1");
             }, 500);
@@ -71,9 +85,9 @@ const App = () => {
           }
           break;
       }
-    
+      lastScroll = timeNow;
     };
-    
+
     window.addEventListener("wheel", handleScrollToElement);
   }, [history]);
   return (
