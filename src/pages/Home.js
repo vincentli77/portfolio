@@ -34,7 +34,6 @@ const Home = () => {
         variants={variants}
       >
         <Navigation />
-        <SocialNetwork />
         <div className="home-main">
           <div className="main-content">
             <motion.h1 drag onDragEnd   dragConstraints={{ left: -250, right: 950, top: -200, bottom: 250 }}>
