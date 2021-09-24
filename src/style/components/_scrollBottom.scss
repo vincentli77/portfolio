@@ -21,27 +21,6 @@
     transform-origin: bottom;
     pointer-events: none;
 
-    @media screen and (max-width: 430px){
-      width: 50px;
-    }
-    .left,
-    .right {
-      @media screen and (max-width: 430px){
-      }
-    }
-    .left {
-      grid-area: a;
-    }
-    p {
-      grid-area: b;
-
-      @media screen and (max-width: 430px){
-        display: none;
-      }
-    }
-    .right {
-      grid-area: c;
-    }
 
 
     span {
