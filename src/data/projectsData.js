@@ -31,7 +31,7 @@ export const projectsData = [
     date: "Decembre 2021",
     languages: ["HTML", "CSS", "VUE.JS"],
     infos:
-      "Jeu chifumi développer en avec vue.js",
+      "Jeu chifumi développé en avec vue.js",
     img: chifumi,
     link: "https://vincentli77.github.io/chifumi/",
   },

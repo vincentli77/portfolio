@@ -33,8 +33,16 @@ const Contact = () => {
         transition={transition}
       >
         <Navigation />
-        <Logo />
         <div className="contact-infos">
+          <div className="my">
+            <h4>Hello</h4>
+            <p>
+              My name is Vincent LI , i’m a paris and a junior web developper.
+              Currently in my third year at HETIC for learning design and web
+              developement. I am looking for a 1 or 2 years of apprenticeship on
+              November 2021
+            </p>
+          </div>
           <div className="address">
             <div className="content">
               <h4>Adresse</h4>
@@ -45,20 +53,15 @@ const Contact = () => {
           <div className="phone">
             <div className="content">
               <h4>Téléphone</h4>
-                <p
-                  style={{ cursor: "pointer" }}                >
-                  06 51 93 09 98
-                </p>
+              <p style={{ cursor: "pointer" }}>06 51 93 09 98</p>
             </div>
           </div>
           <div className="email">
             <div className="content">
               <h4>Email</h4>
-                <p
-                  style={{ cursor: "pointer" }}
-                >
-                  li.jiajinvincent1997@gmail.com
-                </p>
+              <p style={{ cursor: "pointer" }}>
+                li.jiajinvincent1997@gmail.com
+              </p>
             </div>
           </div>
           <SocialNetwork />

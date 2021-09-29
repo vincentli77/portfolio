@@ -9,6 +9,7 @@
 
 
   .navigation {
+    z-index: 1000;
     top: 5px;
     left: 60%;
     font-size: 1.1rem;
@@ -37,6 +38,10 @@
     }
 
     .nav-projects {
+      display: flex;
+      width: 500px;
+      justify-content: space-between;
+      left: 12%;
       transform: translateX(67px);
       padding: 0 20px;
     }
