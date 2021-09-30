@@ -2,11 +2,6 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  @media screen and (max-width: 650px) {
-    overflow: hidden;
-    
-  }
-
 
   .navigation {
     z-index: 1000;
@@ -16,14 +11,9 @@
     line-height: 20px;
     animation: navProject 1s ease forwards;
 
-    @media screen and (max-width: 1000px) {
-      left: 35%;
 
-    }
-
-    @media screen and (max-width: 650px) {
-      left: 15%;
-
+    @media screen and (max-width: 1100px) {
+      left: 5%;
     }
 
     @keyframes navProject {
@@ -67,47 +57,47 @@
     grid-template-columns: 33% 67%;
     position: relative;
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1100px) {
       grid-template-columns: 1fr;
       grid-template-rows: 100px 1fr;
 
     }
-    
+
 
 
     @media screen and (max-height: 600px) {
       margin: 3rem 1rem 0;
     }
 
-
     .project-content {
       margin-right: 20px;
       margin-top: 40%;
       margin-left: 5%;
-    
-      @media screen and (max-width: 950px) {
+
+      @media screen and (max-width: 1100px) {
         margin-top: 0%;
         margin-left: 2%;
 
       }
-        
+
+
 
 
       h1 {
         font-size: 3rem;
-        margin-bottom: 12px;
+        margin-bottom: 3%;
         font-family: $font-2;
         color: red;
         transform: scaleX(0);
         animation: transformTitle 1.5s ease forwards;
         transform-origin: 150%;
 
-        @media screen and (max-width: 810px) {
-          font-size: 2rem;
-        }
-
         @media screen and (max-width: 450px) {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
+          width: 330px;
+          margin: 0 auto;
+          margin-bottom: 3%;
+
         }
 
         @keyframes transformTitle {
@@ -118,16 +108,18 @@
       }
 
       p {
-        margin-bottom: 30px;
+        margin-bottom: 3%;
         color: white;
         font-size: 1.2rem;
 
-        @media screen and (max-width: 700px) {
-          margin: 0;
-        }
+  
 
         @media screen and (max-width: 450px) {
           font-size: .9rem;
+          width: 330px;
+          margin: 0 auto;
+          margin-bottom: 3%;
+
         }
 
         &:after {
@@ -143,15 +135,32 @@
           left: -10%;
           z-index: -10;
 
-          @media screen and (max-width: 950px) {
+          @media screen and (max-width: 1100px) {
             left: 50%;
+          }
+
+          @media screen and (max-width: 720px) {
+            left: 70%;
           }
         }
       }
 
-      ul{
-        @media screen and (max-width: 940px) {
-          display: flex;  
+      .languages {
+        @media screen and (max-width: 1100px) {
+          width: 400px;
+        }
+        @media screen and (max-width: 450px) {
+          width: 330px;
+          margin: 0 auto;
+        }
+
+      }
+
+
+
+      ul {
+        @media screen and (max-width: 1100px) {
+          display: flex;
           width: 300px;
           justify-content: space-between;
         }
@@ -160,7 +169,8 @@
       li {
         color: white;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+
 
 
 
@@ -175,11 +185,6 @@
       margin-left: 10px;
 
 
-      @media screen and (max-width: 500px) {
-        height: 180px;
-        width: 340px;
-          
-      }
 
       .img-container {
         border-radius: 5px;
@@ -190,29 +195,34 @@
         position: relative;
 
         @media screen and (max-width: 1100px) {
-          height: 300px;
-          width: 500px;
-        }
-
-        @media screen and (max-width: 940px) {
           height: 200px;
-          width: 450px;
-          margin-top: 12%;
-            
-        }
-
-        @media screen and (max-width: 600px) {
-          height: 180px;
-          width: 340px;
-          margin-top: 12%;
-            
-        }
-
-
-        
+          width: 400px;
   
+          margin-top: 10%;
 
- 
+        }
+
+        @media screen and (max-width: 700px) {
+          margin-top: 15%;
+
+        }
+
+        @media screen and (max-width: 450px) {
+          margin: 0 auto;
+          margin-top: 15%;
+          margin-left: 10px;
+
+          height: 200px;
+          width: 300px;
+          
+        }
+
+
+
+
+
+
+
 
         &:hover span,
         span:hover {
@@ -254,7 +264,8 @@
             padding-bottom: 10px;
             color: red;
           }
-          p{
+
+          p {
             color: white;
           }
         }
@@ -264,6 +275,12 @@
 
   .button-container {
     width: 130px;
+    
+    @media screen and (max-width: 450px) {
+      margin: 0 auto;
+      margin-top: 30%;
+    }
+
 
     a {
       .button {
@@ -274,10 +291,7 @@
         background: $color-2;
         font-weight: bold;
 
-        @media screen and (max-width: 1100px) {
-          width: 100px;
-          font-size: .85rem;
-        }
+
 
         &:hover {
           color: $color-2;
@@ -297,17 +311,17 @@
     background-image: url("../../assets/moon.svg");
     border-radius: 50%;
     z-index: -50;
-      animation: circleAnim 15s infinite alternate;
+    animation: circleAnim 15s infinite alternate;
 
-      @keyframes circleAnim {
-        50% {
-          transform: scale(0.2);
-        }
-
-        100% {
-          transform: scale(0.5);
-        }
+    @keyframes circleAnim {
+      50% {
+        transform: scale(0.2);
       }
+
+      100% {
+        transform: scale(0.5);
+      }
+    }
 
     @media screen and (max-width: 630px) {
       display: none;

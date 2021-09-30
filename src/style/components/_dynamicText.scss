@@ -2,6 +2,10 @@
   position: relative;
   display: flex;
 
+  @media screen and (max-width: 650px){
+    flex-direction: column;
+  }
+
   .simply {
     color: red;
     font-weight: bold;

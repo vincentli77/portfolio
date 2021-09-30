@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import ButtonsBottom from "../components/ButtonBottoms";
 import SocialNetwork from "../components/SocialNetwork";
-import Logo from "../components/Logo";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -62,9 +61,10 @@ const Contact = () => {
               <p style={{ cursor: "pointer" }}>
                 li.jiajinvincent1997@gmail.com
               </p>
+              <SocialNetwork />
+
             </div>
           </div>
-          <SocialNetwork />
         </div>
         <ButtonsBottom left={"/portfolio/project-5"} />
       </motion.div>

@@ -32,7 +32,7 @@ const App = () => {
       const wheelRouter = (after, before) => {
         if (
           e.wheelDeltaY < 0 &&
-          (scrollingDirection != 2 || timeNow > lastScroll + scrollIdleTime)
+          (scrollingDirection !== 2 || timeNow > lastScroll + scrollIdleTime)
         ) {
           setTimeout(() => {
             history.push(after);
@@ -40,7 +40,7 @@ const App = () => {
           }, 500);
         } else if (
           e.wheelDeltaY > 0 &&
-          (scrollingDirection != 1 || timeNow > lastScroll + scrollIdleTime)
+          (scrollingDirection !== 1 || timeNow > lastScroll + scrollIdleTime)
         ) {
           setTimeout(() => {
             history.push(before);
@@ -53,7 +53,7 @@ const App = () => {
         case url:
           if (
             e.wheelDeltaY < 0 &&
-            (scrollingDirection != 1 || timeNow > lastScroll + scrollIdleTime)
+            (scrollingDirection !== 1 || timeNow > lastScroll + scrollIdleTime)
           ) {
             setTimeout(() => {
               history.push("/portfolio/project-1");
@@ -61,7 +61,7 @@ const App = () => {
           }
           break;
         default: //do nothing
-
+        break    
         case url + "project-1":
           wheelRouter("/portfolio/project-2", "/portfolio/");
           break;

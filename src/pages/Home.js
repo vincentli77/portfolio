@@ -1,6 +1,5 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import SocialNetwork from "../components/SocialNetwork";
 import ButtonsBottoms from "../components/ButtonBottoms";
 import DynamicText from "../components/DynamicText";
 import { motion } from "framer-motion";

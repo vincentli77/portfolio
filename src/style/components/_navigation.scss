@@ -6,6 +6,8 @@
   line-height: 28px;
   color: $color-4;
   z-index: 100;
+
+
   .menu{
     display: flex;
     width: 300px;
@@ -14,31 +16,7 @@
     font-weight: bold;
   }
 
-  &:before {
-    content: '';
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    background: $color-3;
-    top: -150px;
-    left: -160px;
-    z-index: -1;
-    animation: navAnim 10s infinite alternate;
-
-    @keyframes navAnim {
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-    @media screen and (max-width: 430px){
-      height: 50px;
-      width: 50px;
-    }
-  }
+ 
   .nav-active {
     color: white
   }
@@ -76,6 +54,12 @@
       transition: .3s ;
       perspective: 500px;
       z-index: 100;
+
+      @media screen and (max-width: 650px) {
+        flex-direction: column;
+      }
+    
+
 
       li {
         transition: .3s;

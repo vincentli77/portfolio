@@ -1,10 +1,13 @@
 .scroll-bottom {
   position: absolute;
   bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 48%;
   color: $color-4;
   font-size: 1.7rem;
+
+  @media screen and (max-width: 650px) {
+    transform: translate(-48%, 0%);
+  }
 
   &:hover .sb-main {
     pointer-events: auto;
