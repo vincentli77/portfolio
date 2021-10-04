@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f6d41aef.chunk.css",
-    "main.js": "/portfolio/static/js/main.1d4ca789.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1d4ca789.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a6faa9e8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a6faa9e8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.4fdeb5a8.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.4fdeb5a8.js.map",
     "static/js/2.8ab55090.chunk.js": "/portfolio/static/js/2.8ab55090.chunk.js",
@@ -14,13 +14,13 @@
     "static/media/casse_brique.55570675.png": "/portfolio/static/media/casse_brique.55570675.png",
     "static/media/chifumi.38c090b2.png": "/portfolio/static/media/chifumi.38c090b2.png",
     "static/media/index.scss": "/portfolio/static/media/moon.d02c4175.svg",
-    "static/media/project4.2eb3c9a7.png": "/portfolio/static/media/project4.2eb3c9a7.png",
-    "static/media/royal_noisiel.dbdfeb50.png": "/portfolio/static/media/royal_noisiel.dbdfeb50.png"
+    "static/media/pokeapi.ddd8a154.png": "/portfolio/static/media/pokeapi.ddd8a154.png",
+    "static/media/project4.2eb3c9a7.png": "/portfolio/static/media/project4.2eb3c9a7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4fdeb5a8.js",
     "static/js/2.8ab55090.chunk.js",
     "static/css/main.f6d41aef.chunk.css",
-    "static/js/main.1d4ca789.chunk.js"
+    "static/js/main.a6faa9e8.chunk.js"
   ]
 }
