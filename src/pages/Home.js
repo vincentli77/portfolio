@@ -35,10 +35,10 @@ const Home = () => {
         <Navigation />
         <div className="home-main">
           <div className="main-content">
-            <motion.h1 drag onDragEnd   dragConstraints={{ left: -250, right: 950, top: -200, bottom: 250 }}>
+            <motion.h1 >
               Vincent LI
             </motion.h1>
-            <motion.h2 drag onDragEnd dragConstraints={{ left: -250, right: 1250, top: -200, bottom: 250 }}>
+            <motion.h2 >
               <DynamicText />
             </motion.h2>
           </div>
