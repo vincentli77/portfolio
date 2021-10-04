@@ -2,7 +2,7 @@ import casseBrique from '../assets/casse_brique.png'
 import api_back from '../assets/api_back.png'
 import chifumi from '../assets/chifumi.png'
 import project4 from '../assets/project4.png'
-import royalNoisiel from '../assets/royal_noisiel.png'
+import pokeapi from '../assets/pokeapi.png'
 
 export const projectsData = [
   {
@@ -48,12 +48,12 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Royal noisiel",
+    title: 'Pokedex API',
     date: "Juin 2019",
-    languages: ["HTML", "CSS","JS"],
+    languages: ["HTML", "CSS","JS","REACT"],
     infos:
-      "Création d'un site vitrine de restaurant",
-    img: royalNoisiel,
-    link: "http://www.royalnoisiel.fr",
+      "Pokedex en utilisant une API pokemon en react",
+    img: pokeapi,
+    link: "https://vincentlipokeapi.netlify.app/",
   },
 ];
