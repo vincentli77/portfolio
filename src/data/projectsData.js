@@ -23,7 +23,7 @@ export const projectsData = [
     infos:
       "Gestion stockage de livre basé à partir de l'api google books permettant d'ajouter, supprimer des livres. Les livres sont stockés depuis une base de données et l'ajouts des livres se fait grâce a l'appel d'api de google books",
     img: api_back,
-    link: "https://vincentli77.github.io/first_api_back_express/",
+    link: "https://vincentli77.github.io/first_api_back_express/search.html",
   },
   {
     id: 3,
