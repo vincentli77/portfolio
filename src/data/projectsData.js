@@ -7,7 +7,7 @@ import pokeapi from '../assets/pokeapi.png'
 export const projectsData = [
   {
     id: 1,
-    title: "Casse briqe",
+    title: "Casse brique",
     date: "Février 2020",
     languages: ["HTML", "CSS", "Javascripts","CANVAS"],
     infos:
