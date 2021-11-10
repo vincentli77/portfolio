@@ -33,7 +33,7 @@ const Home = () => {
         variants={variants}
       >
         <Navigation />
-        <div className="">
+        <div className="home-main">
           <div className="main-content">
             <motion.h1 >
               Vincent LI
