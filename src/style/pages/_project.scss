@@ -11,6 +11,7 @@
     line-height: 20px;
     animation: navProject 1s ease forwards;
 
+
     @media screen and (max-width: 1100px) {
       left: 5%;
     }
@@ -59,7 +60,10 @@
     @media screen and (max-width: 1100px) {
       grid-template-columns: 1fr;
       grid-template-rows: 100px 1fr;
+
     }
+
+
 
     @media screen and (max-height: 600px) {
       margin: 3rem 1rem 0;
@@ -73,7 +77,11 @@
       @media screen and (max-width: 1100px) {
         margin-top: 0%;
         margin-left: 2%;
+
       }
+
+
+
 
       h1 {
         font-size: 3rem;
@@ -89,6 +97,7 @@
           width: 330px;
           margin: 0 auto;
           margin-bottom: 3%;
+
         }
 
         @keyframes transformTitle {
@@ -103,19 +112,22 @@
         color: white;
         font-size: 1.2rem;
 
+  
+
         @media screen and (max-width: 450px) {
-          font-size: 0.9rem;
+          font-size: .9rem;
           width: 330px;
           margin: 0 auto;
           margin-bottom: 3%;
+
         }
 
         &:after {
-          content: '';
+          content: "";
           height: 545px;
           width: 545px;
           transform: scale(0.5);
-          background-image: url('../../assets/moon.svg');
+          background-image: url("../../assets/moon.svg");
 
           border-radius: 50%;
           position: absolute;
@@ -141,7 +153,10 @@
           width: 330px;
           margin: 0 auto;
         }
+
       }
+
+
 
       ul {
         @media screen and (max-width: 1100px) {
@@ -155,13 +170,21 @@
         color: white;
         font-weight: bold;
         font-size: 1.2rem;
+
+
+
+
       }
+
+
     }
 
     .img-content {
       position: relative;
       text-align: left;
       margin-left: 10px;
+
+
 
       .img-container {
         border-radius: 5px;
@@ -174,12 +197,14 @@
         @media screen and (max-width: 1100px) {
           height: 200px;
           width: 400px;
-
+  
           margin-top: 10%;
+
         }
 
         @media screen and (max-width: 700px) {
           margin-top: 15%;
+
         }
 
         @media screen and (max-width: 450px) {
@@ -189,7 +214,15 @@
 
           height: 200px;
           width: 300px;
+          
         }
+
+
+
+
+
+
+
 
         &:hover span,
         span:hover {
@@ -242,11 +275,12 @@
 
   .button-container {
     width: 130px;
-
+    
     @media screen and (max-width: 450px) {
       margin: 0 auto;
       margin-top: 30%;
     }
+
 
     a {
       .button {
@@ -256,6 +290,8 @@
         color: $color-1;
         background: $color-2;
         font-weight: bold;
+
+
 
         &:hover {
           color: $color-2;
@@ -272,7 +308,7 @@
     transform: scale(0.5);
 
     background: $color-3;
-    background-image: url('../../assets/moon.svg');
+    background-image: url("../../assets/moon.svg");
     border-radius: 50%;
     z-index: -50;
     animation: circleAnim 15s infinite alternate;
@@ -291,4 +327,6 @@
       display: none;
     }
   }
+
+
 }

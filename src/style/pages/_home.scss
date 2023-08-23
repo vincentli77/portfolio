@@ -3,6 +3,7 @@
   width: 100vw;
   position: absolute;
 
+
   .home-main {
     display: grid;
     align-items: center;
@@ -20,13 +21,14 @@
         font-family: $font-2;
         color: red;
 
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 950px){
           font-size: 2.5rem;
         }
 
-        @media screen and (max-width: 650px) {
+  
+        @media screen and (max-width: 650px){
           font-size: 2rem;
-          overflow: hidden;
+          overflow:hidden;
         }
 
         &:before {
@@ -35,16 +37,18 @@
           height: 545px;
           width: 545px;
           border-radius: 50%;
-          background-image: url('../../assets/moon.svg');
+          background-image: url("../../assets/moon.svg");
           top: -200px;
           left: -40%;
           z-index: -10;
           animation: h1Anim 1.5s forwards ease;
           transform: scale(0);
 
-          @media screen and (max-width: 950px) {
+          @media screen and (max-width: 950px){
+
             top: -400px;
             left: 50%;
+
           }
 
           @keyframes h1Anim {
@@ -55,14 +59,17 @@
         }
       }
 
+
+
       h2 {
         font-size: 4.2rem;
         font-weight: 100;
 
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 950px){
           font-size: 2.8rem;
-          overflow: hidden;
+          overflow:hidden;
         }
+
       }
     }
   }

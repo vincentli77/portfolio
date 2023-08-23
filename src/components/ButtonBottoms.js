@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const ButtonBottoms = (props) => {
   return (
@@ -18,7 +18,7 @@ const ButtonBottoms = (props) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ButtonBottoms
+export default ButtonBottoms;

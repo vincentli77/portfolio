@@ -1,17 +1,18 @@
-import React from 'react'
-import Navigation from '../components/Navigation'
-import ButtonsBottoms from '../components/ButtonBottoms'
-import DynamicText from '../components/DynamicText'
-import { motion } from 'framer-motion'
+import React from "react";
+import Navigation from "../components/Navigation";
+import ButtonsBottoms from "../components/ButtonBottoms";
+import DynamicText from "../components/DynamicText";
+import { motion } from "framer-motion";
 
 const Home = () => {
+
   const variants = {
     initial: {
       opacity: 0,
       transition: { duration: 0.5 },
       x: 100,
     },
-    visible: {
+    visible: { 
       opacity: 1,
       x: 0,
     },
@@ -19,8 +20,8 @@ const Home = () => {
       opacity: 0,
       transition: { duration: 0.3 },
       x: -100,
-    },
-  }
+    }
+  };
 
   return (
     <main>
@@ -34,16 +35,18 @@ const Home = () => {
         <Navigation />
         <div className="home-main">
           <div className="main-content">
-            <h1>Vincent LI</h1>
-            <h2>
+            <motion.h1 >
+              Vincent LI
+            </motion.h1>
+            <motion.h2 >
               <DynamicText />
-            </h2>
+            </motion.h2>
           </div>
         </div>
-        <ButtonsBottoms right={'/portfolio/project-1'} />
+        <ButtonsBottoms right={"/portfolio/project-1"} />
       </motion.div>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

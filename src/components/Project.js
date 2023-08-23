@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
-import { projectsData } from '../data/projectsData'
-import { motion } from 'framer-motion'
+import React, { useState } from "react";
+import { projectsData } from "../data/projectsData";
+import { motion } from "framer-motion";
+
 
 const Project = (props) => {
-  const [currentProject] = useState(projectsData)
+  const [currentProject] = useState(projectsData);
 
-  const project = currentProject[props.projectNumber]
+  const project = currentProject[props.projectNumber];
+
+
 
   const variants = {
     initial: {
@@ -13,7 +16,7 @@ const Project = (props) => {
       transition: { duration: 0.5 },
       x: 200,
     },
-    visible: {
+    visible: { 
       opacity: 1,
       x: 0,
     },
@@ -21,12 +24,13 @@ const Project = (props) => {
       opacity: 0,
       transition: { duration: 0.35 },
       x: -800,
-    },
-  }
+    }
+  };
 
-  let plusMinus = Math.random() > 0.4 ? 1 : -1
-  let imgX = Math.random() * 350 * plusMinus
-  let imgY = Math.random() * 120 * plusMinus
+  // random img pop
+  let plusMinus = Math.random() > 0.4 ? 1 : -1;
+  let imgX = Math.random() * 350 * plusMinus;
+  let imgY = Math.random() * 120 * plusMinus;
 
   const imgAnim = {
     initial: {
@@ -34,7 +38,7 @@ const Project = (props) => {
       x: imgX,
       y: imgY,
     },
-    visible: {
+    visible: { 
       opacity: 1,
       x: 0,
       y: 0,
@@ -44,12 +48,12 @@ const Project = (props) => {
       opacity: 0,
       transition: { duration: 0.35 },
       x: -800,
-    },
+    }
   }
 
   const transition = {
-    ease: [0.03, 0.87, 0.73, 0.9],
-    duration: 0.6,
+    ease: [.03,.87,.73,.9],
+    duration: .6,
   }
 
   return (
@@ -66,16 +70,16 @@ const Project = (props) => {
         <p>{project.date}</p>
         <ul className="languages">
           {project.languages.map((item) => {
-            return <li key={item}>{item}</li>
+            return <li key={item}>{item}</li>;
           })}
         </ul>
       </div>
-      <motion.div
+      <motion.div 
         className="img-content"
         initial="initial"
         animate="visible"
         variants={imgAnim}
-        transition={{ duration: 1.2 }}
+        transition={{duration: 1.2}}
       >
         <div className="img-container hover">
           <span>
@@ -91,7 +95,7 @@ const Project = (props) => {
         </div>
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
