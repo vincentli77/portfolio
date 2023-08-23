@@ -9,10 +9,9 @@ const App = () => {
   const location = useLocation()
   const history = useHistory()
   let isScrolling = false
+  const url = window.location.href
 
   const handleScroll = (e) => {
-    const url = window.location.origin + '/portfolio/'
-
     if (!isScrolling) {
       isScrolling = true
       const wheelRouter = (after, before) => {
@@ -27,12 +26,12 @@ const App = () => {
       }
       switch (window.location.href.toString()) {
         case url:
-          wheelRouter('project-1', '/portfolio/')
+          wheelRouter('project-1', '/')
           break
         default:
           break
         case url + 'project-1':
-          wheelRouter('/portfolio/project-2', '/portfolio/')
+          wheelRouter('project-2', '/')
           break
         case url + 'project-2':
           wheelRouter('project-3', 'project-1')
@@ -63,13 +62,13 @@ const App = () => {
   return (
     <AnimatePresence>
       <Switch location={location} key={location.pathname}>
-        <Route exact path="/portfolio" component={Home} />
-        <Route exact path="/portfolio/project-1" component={Project1} />
-        <Route exact path="/portfolio/project-2" component={Project2} />
-        <Route exact path="/portfolio/project-3" component={Project3} />
-        <Route exact path="/portfolio/project-4" component={Project4} />
-        <Route exact path="/portfolio/project-5" component={Project5} />
-        <Route exact path="/portfolio/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/project-1" component={Project1} />
+        <Route exact path="/project-2" component={Project2} />
+        <Route exact path="/project-3" component={Project3} />
+        <Route exact path="/project-4" component={Project4} />
+        <Route exact path="/project-5" component={Project5} />
+        <Route exact path="/contact" component={Contact} />
         <Redirect to="/"></Redirect>
       </Switch>
     </AnimatePresence>
