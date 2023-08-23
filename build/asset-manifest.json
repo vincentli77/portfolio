@@ -1,26 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f6d41aef.chunk.css",
-    "main.js": "/portfolio/static/js/main.0e79bb0c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0e79bb0c.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.4fdeb5a8.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.4fdeb5a8.js.map",
-    "static/js/2.8ab55090.chunk.js": "/portfolio/static/js/2.8ab55090.chunk.js",
-    "static/js/2.8ab55090.chunk.js.map": "/portfolio/static/js/2.8ab55090.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.236fe06c.css",
+    "main.js": "/portfolio/static/js/main.7f2e9125.js",
+    "static/media/project4.png": "/portfolio/static/media/project4.2eb3c9a748110eb116ee.png",
+    "static/media/pokeapi.png": "/portfolio/static/media/pokeapi.ddd8a1542d4f0d43faae.png",
+    "static/media/api_back.png": "/portfolio/static/media/api_back.4c576d1a1fe99b4a440c.png",
+    "static/media/chifumi.png": "/portfolio/static/media/chifumi.38c090b2d5511239da25.png",
+    "static/media/casse_brique.png": "/portfolio/static/media/casse_brique.5557067552607c043326.png",
+    "static/media/moon.svg": "/portfolio/static/media/moon.d02c41756a7e66745e1a.svg",
     "index.html": "/portfolio/index.html",
-    "static/css/main.f6d41aef.chunk.css.map": "/portfolio/static/css/main.f6d41aef.chunk.css.map",
-    "static/js/2.8ab55090.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8ab55090.chunk.js.LICENSE.txt",
-    "static/media/api_back.4c576d1a.png": "/portfolio/static/media/api_back.4c576d1a.png",
-    "static/media/casse_brique.55570675.png": "/portfolio/static/media/casse_brique.55570675.png",
-    "static/media/chifumi.38c090b2.png": "/portfolio/static/media/chifumi.38c090b2.png",
-    "static/media/index.scss": "/portfolio/static/media/moon.d02c4175.svg",
-    "static/media/pokeapi.ddd8a154.png": "/portfolio/static/media/pokeapi.ddd8a154.png",
-    "static/media/project4.2eb3c9a7.png": "/portfolio/static/media/project4.2eb3c9a7.png"
+    "main.236fe06c.css.map": "/portfolio/static/css/main.236fe06c.css.map",
+    "main.7f2e9125.js.map": "/portfolio/static/js/main.7f2e9125.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fdeb5a8.js",
-    "static/js/2.8ab55090.chunk.js",
-    "static/css/main.f6d41aef.chunk.css",
-    "static/js/main.0e79bb0c.chunk.js"
+    "static/css/main.236fe06c.css",
+    "static/js/main.7f2e9125.js"
   ]
 }
