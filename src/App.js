@@ -1,95 +1,66 @@
-import React, { useEffect } from "react";
-import {
-  Redirect,
-  Route,
-  Switch,
-  useHistory,
-  useLocation,
-} from "react-router-dom";
-import Home from "./pages/Home";
-import {
-  Project1,
-  Project2,
-  Project3,
-  Project4,
-  Project5,
-} from "./pages/Projects";
-import Contact from "./pages/Contact";
-import { AnimatePresence } from "framer-motion";
+import React, { useEffect } from 'react'
+import { Redirect, Route, Switch, useHistory, useLocation } from 'react-router-dom'
+import Home from './pages/Home'
+import { Project1, Project2, Project3, Project4, Project5 } from './pages/Projects'
+import Contact from './pages/Contact'
+import { AnimatePresence } from 'framer-motion'
 
 const App = () => {
-  const location = useLocation();
-  const history = useHistory();
+  const location = useLocation()
+  const history = useHistory()
+  let isScrolling = false
 
-  useEffect(() => {
-    let scrollingDirection = 0; //idle
-    let lastScroll = 9999;
-    let scrollIdleTime = 300; // time interval that we consider a new scroll event
-    const handleScrollToElement = (e) => {
-      const url = window.location.origin + "/portfolio/";
-      var timeNow = performance.now();
+  const handleScroll = (e) => {
+    const url = window.location.origin + '/portfolio/'
 
+    if (!isScrolling) {
+      isScrolling = true
       const wheelRouter = (after, before) => {
-        if (
-          e.wheelDeltaY < 0 &&
-          (scrollingDirection !== 2 || timeNow > lastScroll + scrollIdleTime)
-        ) {
-          setTimeout(() => {
-            history.push(after);
-            scrollingDirection = 2;
-          }, 500);
-        } else if (
-          e.wheelDeltaY > 0 &&
-          (scrollingDirection !== 1 || timeNow > lastScroll + scrollIdleTime)
-        ) {
-          setTimeout(() => {
-            history.push(before);
-            scrollingDirection = 1;
-          }, 500);
+        console.log(e.wheelDeltaY)
+        if (e.wheelDeltaY < 0) {
+          history.push(after)
+        } else if (e.wheelDeltaY > 0) {
+          history.push(before)
         }
-      };
-
+        setTimeout(() => {
+          isScrolling = false
+        }, 1500)
+      }
       switch (window.location.href.toString()) {
         case url:
-          if (
-            e.wheelDeltaY < 0 &&
-            (scrollingDirection !== 1 || timeNow > lastScroll + scrollIdleTime)
-          ) {
-            setTimeout(() => {
-              history.push("/portfolio/project-1");
-            }, 500);
-          }
-          break;
-        default: //do nothing
-        break    
-        case url + "project-1":
-          wheelRouter("/portfolio/project-2", "/portfolio/");
-          break;
-        case url + "project-2":
-          wheelRouter("project-3", "project-1");
-          break;
-        case url + "project-3":
-          wheelRouter("project-4", "project-2");
-          break;
-        case url + "project-4":
-          wheelRouter("project-5", "project-3");
-          break;
-        case url + "project-5":
-          wheelRouter("contact", "project-4");
-          break;
-        case url + "contact":
-          if (e.wheelDeltaY > 0) {
-            setTimeout(() => {
-              history.push("project-5");
-            }, 500);
-          }
-          break;
-      }
-      lastScroll = timeNow;
-    };
+          wheelRouter('project-1', '/portfolio/')
+          break
+        default:
+          break
+        case url + 'project-1':
+          wheelRouter('/portfolio/project-2', '/portfolio/')
+          break
+        case url + 'project-2':
+          wheelRouter('project-3', 'project-1')
+          break
+        case url + 'project-3':
+          wheelRouter('project-4', 'project-2')
+          break
+        case url + 'project-4':
+          wheelRouter('project-5', 'project-3')
+          break
+        case url + 'project-5':
+          wheelRouter('contact', 'project-4')
+          break
+        case url + 'contact':
+          wheelRouter('contact', 'project-5')
 
-    window.addEventListener("wheel", handleScrollToElement);
-  }, [history]);
+          break
+      }
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('wheel', handleScroll)
+    return () => {
+      window.removeEventListener('wheel', handleScroll)
+    }
+  }, [])
   return (
     <AnimatePresence>
       <Switch location={location} key={location.pathname}>
@@ -103,7 +74,7 @@ const App = () => {
         <Redirect to="/"></Redirect>
       </Switch>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default App;
+export default App
