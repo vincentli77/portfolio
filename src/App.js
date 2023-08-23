@@ -16,7 +16,6 @@ const App = () => {
     if (!isScrolling) {
       isScrolling = true
       const wheelRouter = (after, before) => {
-        console.log(e.wheelDeltaY)
         if (e.wheelDeltaY < 0) {
           history.push(after)
         } else if (e.wheelDeltaY > 0) {
