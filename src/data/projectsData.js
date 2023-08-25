@@ -1,60 +1,70 @@
 import casseBrique from '../assets/casse_brique.png'
-import api_back from '../assets/api_back.png'
 import chifumi from '../assets/chifumi.png'
-import project4 from '../assets/project4.png'
 import pokeapi from '../assets/pokeapi.png'
+import reservation from '../assets/reservation.png'
+import sogudo from '../assets/sogudo.png'
+import zoneadsl from '../assets/zoneadsl.png'
 
 export const projectsData = [
   {
     id: 1,
-    title: "Casse brique",
-    date: "Février 2020",
-    languages: ["HTML", "CSS", "Javascripts","CANVAS"],
+    title: 'Sogudo',
+    date: '2021-2023',
+    languages: ['HTML', 'CSS', 'Javascript', 'React.js', 'Next.js'],
     infos:
-      "Création du jeu casse brique avec javascript en utilisant le canvas, ce travail  avait pour but de renforcer mes compétences en javascript",
-    img: casseBrique,
-    link: "https://vincentli77.github.io/breaking-brick-canvas/",
+      'Sogudo, comporateur box et mobile qui offrent le meilleur débit à votre adresse et test la qualité de votre connexion Internet mobile  aux endroits que vous fréquentez le plus souvent ',
+    img: sogudo,
+    link: 'https://sogudo-sogudo.vercel.app',
   },
+
   {
     id: 2,
-    title: "H-APIBOOK",
-    date: "Novembre 2020",
-    languages: ["HTML", "CSS","JS","NODE.JS"],
-    infos:
-      "Gestion stockage de livre basé à partir de l'api google books permettant d'ajouter, supprimer des livres. Les livres sont stockés depuis une base de données et l'ajouts des livres se fait grâce a l'appel d'api de google books",
-    img: api_back,
-    link: "https://vincentli77.github.io/first_api_back_express/search.html",
+    title: 'Zoneadsl',
+    date: '2021-2023',
+    languages: ['HTML', 'CSS', 'JS', 'React.js', 'Next.js', 'php'],
+    infos: 'Zoneadsl, comporateur box et mobile qui offrent le meilleur débit à votre adresse',
+    img: zoneadsl,
+    link: 'https://www.zoneadsl.com/',
   },
+
   {
     id: 3,
-    title: "Chifumi",
-    date: "Decembre 2021",
-    languages: ["HTML", "CSS", "VUE.JS"],
+    title: 'Casse brique',
+    date: 'Février 2020',
+    languages: ['HTML', 'CSS', 'Javascript', 'CANVAS'],
     infos:
-      "Jeu chifumi développé en avec vue.js",
-    img: chifumi,
-    link: "https://vincentli77.github.io/chifumi/",
+      'Création du jeu casse brique avec javascript en utilisant le canvas, ce travail  avait pour but de renforcer mes compétences en javascript',
+    img: casseBrique,
+    link: 'https://vincentli77.github.io/breaking-brick-canvas/',
   },
 
   {
     id: 4,
-    title: 'Pokedex API',
-    date: "Juin 2019",
-    languages: ["HTML", "CSS","JS","REACT"],
-    infos:
-      "Pokedex en utilisant une API pokemon en react",
-    img: pokeapi,
-    link: "https://vincentlipokeapi.netlify.app/",
+    title: 'Chifumi',
+    date: 'Decembre 2021',
+    languages: ['HTML', 'CSS', 'VUE.JS'],
+    infos: 'Jeu chifumi développé en avec vue.js',
+    img: chifumi,
+    link: 'https://vincentli77.github.io/chifumi/',
   },
 
   {
     id: 5,
-    title: "Droppshipping website",
-    date: "Avril 2020",
-    languages: ["HTML", "CSS", "JS"],
-    infos:
-      "Site vitrine de droppshipping pour une marque fictif d'un sac à dos",
-    img: project4,
-    link: "https://vincentli77.github.io/dropshipping-vitrine-website/",
+    title: 'Pokedex API',
+    date: 'Juin 2019',
+    languages: ['HTML', 'CSS', 'JS', 'REACT'],
+    infos: 'Pokedex en utilisant une API pokemon en react',
+    img: pokeapi,
+    link: 'https://vincentlipokeapi.netlify.app/',
   },
-];
+
+  {
+    id: 6,
+    title: 'Site de reservation',
+    date: 'Janvier 2022',
+    languages: ['HTML', 'CSS', 'JS', 'VUE.JS', 'GO'],
+    infos: 'Site de réservation',
+    img: reservation,
+    link: 'https://hetic-mt5-reservation.netlify.app',
+  },
+]

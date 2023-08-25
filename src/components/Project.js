@@ -62,7 +62,7 @@ const Project = (props) => {
       variants={variants}
     >
       <div className="project-content">
-        <h1>{project.title}</h1>
+        <h1 style={{ wordWrap: 'break-word', maxWidth: '15ch' }}>{project.title}</h1>
         <p>{project.date}</p>
         <ul className="languages">
           {project.languages.map((item) => {

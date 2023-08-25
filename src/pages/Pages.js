@@ -64,7 +64,18 @@ export const Project5 = () => {
     <main>
       <div className="project">
         <Project projectNumber={4} />
-        <ButtonBottoms left={'/project-4'} right={'/contact'} />
+        <ButtonBottoms left={'/project-4'} right={'/project-6'} />
+      </div>
+    </main>
+  )
+}
+
+export const Project6 = () => {
+  return (
+    <main>
+      <div className="project">
+        <Project projectNumber={5} />
+        <ButtonBottoms left={'/project-5'} right={'/contact'} />
       </div>
     </main>
   )
@@ -75,7 +86,7 @@ export const ContactPage = () => {
     <main>
       <div className="project">
         <Contact />
-        <ButtonBottoms left={'/project-4'} />
+        <ButtonBottoms left={'/project-6'} />
       </div>
     </main>
   )

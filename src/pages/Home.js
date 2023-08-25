@@ -1,5 +1,4 @@
 import React from 'react'
-import ButtonsBottoms from '../components/ButtonBottoms'
 import DynamicText from '../components/DynamicText'
 import { motion } from 'framer-motion'
 

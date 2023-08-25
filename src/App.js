@@ -8,6 +8,7 @@ import {
   Project3,
   Project4,
   Project5,
+  Project6,
 } from './pages/Pages'
 import { AnimatePresence } from 'framer-motion'
 
@@ -50,10 +51,14 @@ const App = () => {
           wheelRouter('project-5', 'project-3')
           break
         case url + 'project-5':
-          wheelRouter('contact', 'project-4')
+          wheelRouter('project-6', 'project-4')
           break
-        case url + 'contact':
+        case url + 'project-6':
           wheelRouter('contact', 'project-5')
+          break
+
+        case url + 'contact':
+          wheelRouter('contact', 'project-6')
 
           break
       }
@@ -76,6 +81,8 @@ const App = () => {
         <Route exact path="/project-3" component={Project3} />
         <Route exact path="/project-4" component={Project4} />
         <Route exact path="/project-5" component={Project5} />
+        <Route exact path="/project-6" component={Project6} />
+
         <Route exact path="/contact" component={ContactPage} />
         <Redirect to="/"></Redirect>
       </Switch>
