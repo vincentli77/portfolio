@@ -1,19 +1,26 @@
 import React, { useEffect } from 'react'
 import { Redirect, Route, Switch, useHistory, useLocation } from 'react-router-dom'
-import Home from './pages/Home'
-import { Project1, Project2, Project3, Project4, Project5 } from './pages/Projects'
-import Contact from './pages/Contact'
+import {
+  ContactPage,
+  HomePage,
+  Project1,
+  Project2,
+  Project3,
+  Project4,
+  Project5,
+} from './pages/Pages'
 import { AnimatePresence } from 'framer-motion'
 
 const App = () => {
   const location = useLocation()
   const history = useHistory()
   let isScrolling = false
-  const url = window.location.href
+  const url = window.location.origin + '/'
 
   const handleScroll = (e) => {
     if (!isScrolling) {
       isScrolling = true
+
       const wheelRouter = (after, before) => {
         if (e.wheelDeltaY < 0) {
           history.push(after)
@@ -59,16 +66,17 @@ const App = () => {
       window.removeEventListener('wheel', handleScroll)
     }
   }, [])
+
   return (
     <AnimatePresence>
       <Switch location={location} key={location.pathname}>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/project-1" component={Project1} />
         <Route exact path="/project-2" component={Project2} />
         <Route exact path="/project-3" component={Project3} />
         <Route exact path="/project-4" component={Project4} />
         <Route exact path="/project-5" component={Project5} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/contact" component={ContactPage} />
         <Redirect to="/"></Redirect>
       </Switch>
     </AnimatePresence>

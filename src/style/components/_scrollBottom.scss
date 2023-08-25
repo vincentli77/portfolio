@@ -4,7 +4,20 @@
   left: 48%;
   color: $color-4;
   font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 
+  .left {
+    margin-right: 10px;
+  }
+  .right {
+    margin-left: 10px;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
   @media screen and (max-width: 650px) {
     transform: translate(-48%, 0%);
   }
@@ -14,17 +27,9 @@
   }
 
   .sb-main {
-    display: grid;
-    grid-template-columns: 20px 100px 20px;
-    grid-template-areas: 'a b c';
-    align-items: center;
-    justify-items: center;
-    width: 150px;
     transition: 0.4s;
     transform-origin: bottom;
     pointer-events: none;
-
-
 
     span {
       font-size: 1.5rem;
