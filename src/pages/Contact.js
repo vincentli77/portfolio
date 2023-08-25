@@ -31,17 +31,21 @@ const Contact = () => {
       <div className="contact-infos">
         <div className="my">
           <h4>Hello</h4>
-          <p>
-            My name is Vincent LI , i’m a paris and a junior web developper. Currently in my third
-            year at HETIC for learning design and web developement. I am looking for a 1 or 2 years
-            of apprenticeship on November 2021
+          <p style={{ lineHeight: '35px' }}>
+            My name is Vincent LI. I'm based in Paris and I'm a junior web developer. I'm currently
+            in the final year of my studies at HETIC, where I've been learning design and web
+            development. I am reaching the culmination of my studies and I'm actively seeking a
+            full-time position starting in November 2023.
           </p>
         </div>
         <div className="address">
           <div className="content">
             <h4>Adresse</h4>
-            <p>46 avenue du chêne saint fiacre</p>
-            <p>77600 Chanteloup-en-brie</p>
+            <p style={{ lineHeight: '35px' }}>
+              46 avenue du chêne saint fiacre
+              <br />
+              77600 Chanteloup-en-brie
+            </p>
           </div>
         </div>
         <div className="phone">
