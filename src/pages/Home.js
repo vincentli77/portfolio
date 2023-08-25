@@ -22,9 +22,9 @@ const Home = () => {
   }
 
   return (
-    <main>
+    <div className="home">
       <motion.div
-        className="home"
+        className="home-motion"
         initial="initial"
         animate="visible"
         exit="exit"
@@ -38,9 +38,8 @@ const Home = () => {
             </motion.h2>
           </div>
         </div>
-        <ButtonsBottoms right={'/portfolio/project-1'} />
       </motion.div>
-    </main>
+    </div>
   )
 }
 
