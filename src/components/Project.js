@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { projectsData } from '../data/projectsData'
 import { motion } from 'framer-motion'
-
+import moon from '../assets/moon.svg'
 const Project = (props) => {
   const [currentProject] = useState(projectsData)
 
@@ -52,45 +52,51 @@ const Project = (props) => {
     duration: 0.6,
   }
 
+  console.log(project)
   return (
-    <motion.div
-      className="project-main"
-      initial="initial"
-      animate="visible"
-      exit="exit"
-      transition={transition}
-      variants={variants}
-    >
-      <div className="project-content">
-        <h1 style={{ wordWrap: 'break-word', maxWidth: '15ch' }}>{project.title}</h1>
-        <p>{project.date}</p>
-        <ul className="languages">
-          {project.languages.map((item) => {
-            return <li key={item}>{item}</li>
-          })}
-        </ul>
+    <>
+      <div>
+        <img className="moon" src={moon} alt="moon"></img>
       </div>
       <motion.div
-        className="img-content"
+        className="project-main"
         initial="initial"
         animate="visible"
-        variants={imgAnim}
-        transition={{ duration: 1.2 }}
+        exit="exit"
+        transition={transition}
+        variants={variants}
       >
-        <div className="img-container hover">
-          <span>
-            <h3>{project.title}</h3>
-            <p>{project.infos}</p>
-          </span>
-          <img src={project.img} alt={project.title} className="img" />
+        <div className="project-content">
+          <h1>{project.title}</h1>
+          <p>{project.date}</p>
+          <ul className="languages">
+            {project.languages.map((item) => {
+              return <li key={item}>{item}</li>
+            })}
+          </ul>
         </div>
-        <div className="button-container">
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
-            <span className="button">Voir le site</span>
-          </a>
-        </div>
+        <motion.div
+          className="img-content"
+          initial="initial"
+          animate="visible"
+          variants={imgAnim}
+          transition={{ duration: 1.2 }}
+        >
+          <div className="img-container hover">
+            <span>
+              <h3>{project.title}</h3>
+              <p>{project.infos}</p>
+            </span>
+            <img src={project.img} alt={project.title} className="img" />
+          </div>
+          <div className="button-container">
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
+              <span className="button">Voir le site</span>
+            </a>
+          </div>
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </>
   )
 }
 
