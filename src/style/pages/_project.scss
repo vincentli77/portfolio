@@ -3,6 +3,29 @@
   height: 100vh;
   width: 100vw;
 
+  .moon {
+    height: 545px;
+    width: 545px;
+    transform: scale(0.5);
+    background-image: url('../../assets/moon.svg');
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: -150px;
+    z-index: -10;
+
+    @media screen and (max-width: 1100px) {
+      top: 20px;
+      left: -200px;
+    }
+
+    @media screen and (max-width: 720px) {
+      top: 20px;
+
+      left: -200px;
+    }
+  }
+
   .navigation {
     z-index: 1000;
     top: 5px;
@@ -59,6 +82,7 @@
       position: absolute;
       top: 45%;
       left: 75px;
+      z-index: 100;
 
       @media screen and (max-width: 1100px) {
         margin-top: 0%;
@@ -78,13 +102,16 @@
         transform: scaleX(0);
         animation: transformTitle 1.5s ease forwards;
         transform-origin: 150%;
+        word-wrap: break-word;
+        max-width: 320px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 1100px) {
           font-size: 1.5rem;
           width: 330px;
           margin: 0 auto;
           margin-bottom: 3%;
           text-align: center;
+          max-width: 100%;
         }
 
         @keyframes transformTitle {
@@ -109,23 +136,23 @@
 
         &:after {
           content: '';
-          height: 545px;
-          width: 545px;
-          transform: scale(0.5);
-          background-image: url('../../assets/moon.svg');
-          border-radius: 50%;
-          position: absolute;
-          top: -350px;
-          left: -300px;
-          z-index: -10;
+          // height: 545px;
+          // width: 545px;
+          // transform: scale(0.5);
+          // background-image: url('../../assets/moon.svg');
+          // border-radius: 50%;
+          // position: absolute;
+          // top: -350px;
+          // left: -300px;
+          // z-index: -10;
 
-          @media screen and (max-width: 1100px) {
-            left: 50%;
-          }
+          // @media screen and (max-width: 1100px) {
+          //   left: 50%;
+          // }
 
-          @media screen and (max-width: 720px) {
-            left: 70%;
-          }
+          // @media screen and (max-width: 720px) {
+          //   left: 70%;
+          // }
         }
       }
 
