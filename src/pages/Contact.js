@@ -35,7 +35,7 @@ const Contact = () => {
             My name is Vincent LI. I'm based in Paris and I'm a junior web developer. I'm currently
             in the final year of my studies at HETIC, where I've been learning design and web
             development. I am reaching the culmination of my studies and I'm actively seeking a
-            full-time position starting in November 2023.
+            full-time position starting in early 2024.
           </p>
         </div>
         <div className="address">
