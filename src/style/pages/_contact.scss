@@ -1,5 +1,7 @@
 .contact {
   height: 100%;
+  margin: 25px;
+  position: relative;
 
   .skills {
     width: 50vw;
@@ -35,16 +37,8 @@
 }
 .contact-infos {
   color: white;
-  margin-top: 5%;
-  margin-left: 2%;
-
   display: flex;
   flex-direction: column;
   height: 200px;
   justify-content: space-between;
-
-  @media screen and (max-width: 450px) {
-    margin-top: 10%;
-    margin-left: 5%;
-  }
 }

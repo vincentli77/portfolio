@@ -29,6 +29,7 @@ const Contact = () => {
       transition={transition}
     >
       <div className="contact-infos">
+        <SocialNetwork />
         <div className="my">
           <h4>Hello</h4>
           <p style={{ lineHeight: '35px' }}>
@@ -58,7 +59,6 @@ const Contact = () => {
           <div className="content">
             <h4>Email</h4>
             <p style={{ cursor: 'pointer' }}>li.jiajinvincent1997@gmail.com</p>
-            <SocialNetwork />
           </div>
         </div>
       </div>

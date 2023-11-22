@@ -11,11 +11,12 @@ const Project = (props) => {
     initial: {
       opacity: 0,
       transition: { duration: 0.5 },
-      x: 200,
+      x: 0,
     },
     visible: {
       opacity: 1,
       x: 0,
+      transition: { duration: 1.2 },
     },
     exit: {
       opacity: 0,
@@ -52,7 +53,6 @@ const Project = (props) => {
     duration: 0.6,
   }
 
-  console.log(project)
   return (
     <>
       <div>
