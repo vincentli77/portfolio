@@ -4,6 +4,7 @@ import pokeapi from '../assets/pokeapi.png'
 import reservation from '../assets/reservation.png'
 import sogudo from '../assets/sogudo.png'
 import zoneadsl from '../assets/zoneadsl.png'
+import pluginvscode from '../assets/pluginvscode.png'
 
 export const projectsData = [
   {
@@ -29,6 +30,17 @@ export const projectsData = [
 
   {
     id: 3,
+    title: 'Plugin vscode docs',
+    date: 'Octobre 2023',
+    languages: ['Typescript'],
+    infos:
+      "Plugin permettant d'accédez instantanément à la bonne documentation dans VSCode, en contournant l'obstacle de la recherche. ",
+    img: pluginvscode,
+    link: 'https://marketplace.visualstudio.com/items?itemName=docx-mt5.docx&ssr=false#overview',
+  },
+
+  {
+    id: 4,
     title: 'Casse brique',
     date: 'Février 2020',
     languages: ['HTML', 'CSS', 'Javascript', 'CANVAS'],
@@ -39,7 +51,7 @@ export const projectsData = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'Chifumi',
     date: 'Decembre 2021',
     languages: ['HTML', 'CSS', 'VUE.JS'],
@@ -49,7 +61,7 @@ export const projectsData = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: 'Pokedex API',
     date: 'Juin 2019',
     languages: ['HTML', 'CSS', 'JS', 'REACT'],
@@ -58,13 +70,13 @@ export const projectsData = [
     link: 'https://vincentlipokeapi.netlify.app/',
   },
 
-  {
-    id: 6,
-    title: 'Site de reservation',
-    date: 'Janvier 2022',
-    languages: ['HTML', 'CSS', 'JS', 'VUE.JS', 'GO'],
-    infos: 'Site de réservation',
-    img: reservation,
-    link: 'https://hetic-mt5-reservation.netlify.app',
-  },
+  // {
+  //   id: 6,
+  //   title: 'Site de reservation',
+  //   date: 'Janvier 2022',
+  //   languages: ['HTML', 'CSS', 'JS', 'VUE.JS', 'GO'],
+  //   infos: 'Site de réservation',
+  //   img: reservation,
+  //   link: 'https://hetic-mt5-reservation.netlify.app',
+  // },
 ]
