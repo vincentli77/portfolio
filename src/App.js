@@ -17,6 +17,16 @@ const App = () => {
   const history = useHistory()
   let isScrolling = false
   const url = window.location.origin + '/'
+  const projects = [
+    '',
+    'project-1',
+    'project-2',
+    'project-3',
+    'project-4',
+    'project-5',
+    'project-6',
+    'contact',
+  ]
 
   const handleScroll = (e) => {
     if (!isScrolling) {
@@ -32,35 +42,13 @@ const App = () => {
           isScrolling = false
         }, 1500)
       }
-      switch (window.location.href.toString()) {
-        case url:
-          wheelRouter('project-1', '/')
-          break
-        default:
-          break
-        case url + 'project-1':
-          wheelRouter('project-2', '/')
-          break
-        case url + 'project-2':
-          wheelRouter('project-3', 'project-1')
-          break
-        case url + 'project-3':
-          wheelRouter('project-4', 'project-2')
-          break
-        case url + 'project-4':
-          wheelRouter('project-5', 'project-3')
-          break
-        case url + 'project-5':
-          wheelRouter('project-6', 'project-4')
-          break
-        case url + 'project-6':
-          wheelRouter('contact', 'project-5')
-          break
+      const currentIndex = projects.indexOf(window.location.href.replace(url, ''))
 
-        case url + 'contact':
-          wheelRouter('contact', 'project-6')
+      if (currentIndex !== -1) {
+        const nextIndex = (currentIndex + 1) % projects.length
+        const prevIndex = (currentIndex - 1 + projects.length) % projects.length
 
-          break
+        wheelRouter(projects[nextIndex], projects[prevIndex])
       }
     }
   }
