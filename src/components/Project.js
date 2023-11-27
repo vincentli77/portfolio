@@ -55,9 +55,7 @@ const Project = (props) => {
 
   return (
     <>
-      <div>
-        <img className="moon" src={moon} alt="moon"></img>
-      </div>
+      <img className="moon" src={moon} alt="moon"></img>
       <motion.div
         className="project-main"
         initial="initial"

@@ -61,22 +61,20 @@ const App = () => {
   }, [])
 
   return (
-    <main>
-      <AnimatePresence>
-        <Switch location={location} key={location.pathname}>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/project-1" component={Project1} />
-          <Route exact path="/project-2" component={Project2} />
-          <Route exact path="/project-3" component={Project3} />
-          <Route exact path="/project-4" component={Project4} />
-          <Route exact path="/project-5" component={Project5} />
-          <Route exact path="/project-6" component={Project6} />
+    <AnimatePresence>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/project-1" component={Project1} />
+        <Route exact path="/project-2" component={Project2} />
+        <Route exact path="/project-3" component={Project3} />
+        <Route exact path="/project-4" component={Project4} />
+        <Route exact path="/project-5" component={Project5} />
+        <Route exact path="/project-6" component={Project6} />
 
-          <Route exact path="/contact" component={ContactPage} />
-          <Redirect to="/"></Redirect>
-        </Switch>
-      </AnimatePresence>
-    </main>
+        <Route exact path="/contact" component={ContactPage} />
+        <Redirect to="/"></Redirect>
+      </Switch>
+    </AnimatePresence>
   )
 }
 

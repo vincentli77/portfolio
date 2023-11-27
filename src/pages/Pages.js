@@ -15,12 +15,10 @@ export const HomePage = () => {
 
 export const Project1 = () => {
   return (
-    <main>
-      <div className="project">
-        <Project projectNumber={0} />
-        <ButtonBottoms left={'/'} right={'/project-2'} />
-      </div>
-    </main>
+    <div className="project">
+      <Project projectNumber={0} />
+      <ButtonBottoms left={'/'} right={'/project-2'} />
+    </div>
   )
 }
 
