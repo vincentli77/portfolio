@@ -21,6 +21,10 @@
   @media screen and (max-width: 650px) {
     transform: translate(-48%, 0%);
   }
+  @media screen and (min-width: 650px) and (max-height: 375px) {
+    bottom: 25px;
+    transform: translate(-48%, 0%);
+  }
 
   &:hover .sb-main {
     pointer-events: auto;
