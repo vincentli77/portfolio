@@ -30,7 +30,7 @@ const Contact = () => {
     >
       <div className="contact-infos">
         <SocialNetwork />
-        <div className="my">
+        <div className="content">
           <h4>Hello</h4>
           <p style={{ lineHeight: '35px' }}>
             My name is Vincent LI. I'm based in Paris and I'm a junior web developer. I'm currently
@@ -39,8 +39,8 @@ const Contact = () => {
             full-time position starting in early 2024.
           </p>
         </div>
-        <div className="address">
-          <div className="content">
+        <div className="content">
+          <div>
             <h4>Adresse</h4>
             <p style={{ lineHeight: '35px' }}>
               46 avenue du chêne saint fiacre
@@ -49,14 +49,14 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="phone">
-          <div className="content">
+        <div className="content">
+          <div>
             <h4>Téléphone</h4>
             <p style={{ cursor: 'pointer' }}>06 51 93 09 98</p>
           </div>
         </div>
-        <div className="email">
-          <div className="content">
+        <div className="content">
+          <div>
             <h4>Email</h4>
             <p style={{ cursor: 'pointer' }}>li.jiajinvincent1997@gmail.com</p>
           </div>

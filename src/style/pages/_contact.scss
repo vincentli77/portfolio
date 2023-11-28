@@ -1,7 +1,12 @@
 .contact {
   height: 100%;
-  margin: 25px;
+  padding: 25px;
   position: relative;
+
+  @media screen and (min-width: 650px) and (max-height: 420px) {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
 
   .skills {
     width: 50vw;
@@ -13,12 +18,14 @@
     font-size: 1.5rem;
   }
 
+  .content {
+    margin-bottom: 30px;
+  }
+
   h4 {
     color: red;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
 
     @media screen and (min-width: 1200px) {
       font-size: 1.8rem;
